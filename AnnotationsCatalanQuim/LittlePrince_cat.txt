@@ -1,0 +1,575 @@
+AMRs (Abstract Meaning Representations) for 50 sentences of Le Petit Prince, a 1943 novel by Antoine de Saint-Exupery
+in Catalan.
+
+1. Quan tenia sis anys, una vegada vaig veure (see) un dibuix magnífic en un llibre sobre la selva verge que es deia Històries viscudes.
+
+(v / veure-01
+	:ARG0 (j / jo)
+	:ARG1 (d / dibuix
+	      :mod (m / magnífic)
+	      :location (l / llibre :wiki - 
+		    :name (n / nom :op1 "Històries" :op2 "Viscudes"
+		    :topic (s / selva
+			  :mod (v2 / verge))))
+	:mod (q / quan)
+	:time (a / age-o1
+	      :ARG0 j
+	      :ARG1 (t / temporal-quantity :quant 6
+		    :unit (a / any))))
+
+
+2. Representava (represent) una boa empassantse (swallow) una fera.
+
+(r / representar-01
+	:ARG0 (d / dibuix
+	:ARG1 (b / boa
+           :ARG0-of (e / empassar-se-01
+                      	:ARG1 (f / fera))))
+
+3. Aquí teniu la còpia (copy) del dibuix.
+
+(b / be-located-at-91
+      :ARG1 (t2 / thing
+            :ARG2-of (c / copiar-01
+                  :ARG1 (d / dibuix
+      :ARG2 (a / aquí))
+
+
+4. El llibre deia: "Les boes s'empassen (swallow) la presa tota sencera, sense mastegar (chew).
+
+(d / dir-01
+      :ARG0 (l / llibre)
+      :ARG1 (e / empassar-se-01
+            :ARG0 (b / boa
+            :ARG1 (p / presa
+                  :mod (s / sencera)
+                  :poss b)
+            :manner (m / mastegar-01 :polarity -
+                  :ARG0 b
+                  :ARG1 p)))
+
+
+5. Després no es poden moure (move) i dormen (sleep) durant els sis mesos de la digestió (digest)."
+
+(i / i
+      :op1 (p / possible-01 :polarity -
+            :ARG1 (m / moure-01
+                  :ARG0 (e / ella)
+                  :time (d / després)))
+      :op2 (d / dormir-01
+            :ARG0 e
+            :duration (t / temporal-quantity :quant 6
+                  :unit (m2 / mes)
+                  WRONG****:duration-of (d2 / digerir-01
+                     		:ARG0 e)))
+			
+6. Hi vaig rumiar (reflect) molt, aleshores, en les aventures de la selva i, per la meva banda, amb un llapis de color, vaig fer el meu primer dibuix (draw).
+
+(r / rumiar-02
+      :ARG0 (j / j)
+      :ARG1 (a / aventura
+            :location (s / selva))
+      :manner (m / molt
+      :time (a2 / aleshores))
+
+(i / i
+      :op2 (f / fer-01
+            :ARG0 (j / jo)
+            :ARG1 (d / dibuixar-01
+		  :ord (o / ordinal-entity :value 1)))
+	    :instrument (l / llapis
+		    :mod (c / color))))
+
+
+7. El meu dibuix número 1.
+
+(d / dibuix 
+      :mod 1
+      :poss (j / jo))
+
+8. Era així:
+
+(d / dibuix
+	:mod (a / així)
+
+9. Vaig ensenyar (show) la meva obra mestra a les persones grans i els vaig preguntar (ask) si el dibuix els feia por (scare).
+
+(i / i
+	:op1 (e / ensenyar-01
+	     :ARG0 (j / jo)
+	     :ARG1 (o / obra
+		   :mod (m / mestra))
+	     :ARG2 (p / persona
+		   :mod (g / gran)))
+	:op2 (p2 / preguntar-01
+	     :ARG0 j
+	     :ARG1-of (f / fer-por-01)
+	     :ARG2 p
+		   :mod g
+
+10. Em van respondre (answer) : "¿Per què hauria de fer por (scare) un barret?"
+
+(r / respondre-01
+	:ARG0 (e / ell)
+	:ARG2 (f / fer-por-01)
+	      :ARG0 (b / barret)
+	:ARG1-of (c / cause-01
+              :ARG0 (a2 / amr-unknown)))
+
+11. El meu dibuix no representava un barret.
+
+(r / representar-01 :polarity -
+	:ARG0 (d / dibuix)
+	      :poss (j /jo)
+	:ARG1 (b / barret))
+
+
+12. Representava una boa que digeria un elefant.
+
+(r / representar-01
+	:ARG0 (b / boa
+	      :ARG1-of (d / digerir
+		       :ARG2 (e /elefant))))
+
+13. Aleshores vaig dibuixar l'interior de la boa, perquè les persones grans ho poguessin entendre.
+
+(d / dibuixar-01
+	:ARG0 (j / jo)
+	:ARG1 (i / interior
+	      :part-of (b / boa))
+	:purpose (p / possible-01
+		:ARG1 (e / entendre-01
+                      :ARG0 (p / persona
+			    :mod (g / gran))
+		      :ARG1 (h / ho))))
+	
+
+14. Sempre necessiten explicacions.
+
+(n / necessitar-01
+	:ARG0 (e / ell)
+	:ARG1 (e2 / explicació))
+
+
+15. El meu dibuix número 2 era així:
+
+(d / dibuix-01
+	:mod 2
+	:mod (a / així)
+	:poss (j / jo))
+	
+
+16. Les persones grans em van aconsellar que deixés estar els dibuixos de boes obertes i tancades i que més valia que m'interessés per la geografia, la història, el càlcul i la
+gramàtica.
+
+(i / i
+   :op1 (a / aconsellar-01
+	:ARG0 (p / persona
+	      :mod (g / gran))
+	:ARG1 (d / deixar-estar-01
+	      :ARG0 (j / jo)
+	      :ARG1 (d / dibuix
+		    :topic (b / boa
+		          :mod (i / i
+			       :op1 (o / oberta)
+		    	       :op2 (t / tancada)))))
+   :op1 (v / valer-01
+	:ARG0 (i / interessar-se-01
+	      :ARG0 (j / jo)
+	      :ARG1 (i / i
+		    :op1 (g / geografia)
+		    :op2 (h / història)
+		    :op3 (c / càlcul)
+		    :op4 (g2 / gramàtica)))
+	:degree (m / més)))
+	
+17. Així va ser que vaig abandonar a l'edat de sis anys una magnífica carrera de pintor. 
+
+(c / cause-01
+     :ARG0 (a / així)
+     :ARG1 (a2 / abandonar-01
+	   :ARG0 (j / jo)
+	   :ARG1 (c / carrera
+		 :mod (p / pintor)
+		      :mod (m / magnífica)))
+     :time (e / edat-01
+	   :ARG0 j
+	   :ARG1 (t / temporal-quantity :quant 6
+		 :unit (a3 / any))))
+	
+
+18. M'havia desanimat el fracàs del dibuix número 1 i del dibuix número 2. 
+
+(d / desanimar-01 
+	:ARG0 (f / fracassar-01
+		 :ARG1 (i / i
+		       :op1 (d / dibuix
+			    :mod (n / número
+				 :mod 1))
+		       :op2 (d2 / dibuix
+			    :mod (n / número
+				 :mod 2)))
+	:ARG1 (j / jo))
+
+
+19. Les persones grans no entenen mai res, totes soles, i per als nens és molt pesat haver-los de donar sempre explicacions i més explicacions.
+
+(i / i
+      :op1 (e / entendre-01 :polarity -
+            :ARG0 (p2 / persona
+		  :mod (g / gran))
+            :ARG1 (r / res)
+            :time (m / mai)
+            :mod (t / tota-sola))
+      :op2 (p / pesat
+            :domain (d / donar-01
+                  :ARG0 (n / nen)
+                  :ARG1 (i / i
+			:op1 (e2 / explicació)
+			:op2 (e2
+			     :degree (m / més))
+                  :ARG2 g
+                  :time (s / sempre))))
+
+20. Per això vaig haver d'escollir un altre ofici i vaig aprendre a pilotar avions.
+
+(c / cause-01
+  :ARG1 (i / i
+          :op1 (e / escollir-01
+                 :ARG0 (j / jo)
+                 :ARG1 (o / ofici
+                         :mod (a2 / altre)))
+          :op2 (a / aprendre-01
+                 :ARG0 j
+                 :ARG1 (p / pilotar-01
+                         :ARG0 j
+                         :ARG1 (a3 / avió)))))
+	
+21. He volat una mica per tot el món.
+
+(v / volar-01
+	:ARG0 (j / jo)
+	:location (m / món
+	      :mod (t / tot)))
+
+
+22. I la geografia, és veritat, m'ha servit molt.
+
+(s / servir-01
+	:ARG0 (g / geografia)
+	:ARG1 (j / jo)
+
+23. Sabia distingir, al primer cop d'ull, la Xina d'Arizona.
+
+(s / saber-01
+	:ARG0 (j / jo)
+	:ARG1 (d / distingir-01
+		:ARG0 j
+		:ARG1 (x / Xina)
+		:ARG2 (a / Arizona)
+		:manner (a2/ a primer cop-d'ull)))
+
+24. És molt útil, si t'has perdut durant la nit.
+
+(u / útil
+	:domain (d / distingir-01
+		:manner (a / a primer cop d'ull))
+	:condition (p / perdut-01
+		:ARG0 (t / tú)
+		:duration (t / temporal-quantity
+			:unit (n / nit))))
+
+25. D'aquesta manera, al llarg de la vida, he tingut un pila de contactes amb una pila de gent seriosa. 
+
+(t / tenir-01 
+   :ARG0 (j / jo)
+   :ARG1 (c / contacte)
+	 :quant (p / pila)
+   :ARG2 (g / gent
+	 :mod (s / seriosa)
+	 	:quant (p / pila))
+   :time (l / llarg
+	 :poss (v / vida)))
+   
+
+26. He viscut molt entre les persones grans.
+
+(v / viure-01
+	:ARG0 (j / jo)
+	:degree (m / molt)
+	:accompanier (p / persona
+		:mod (g / gran)))
+	
+27. Les he vistes de molt a prop. 
+
+(v / veure-01
+	:ARG0 (j / jo)
+	:manner (p / prop)
+		:degree (m / molt)
+	:ARG1 (p / persona
+		:mod (g / gran)))
+
+28. Això no ha fet millorar gaire la meva opinió.
+
+(m / millorar-01 :polarity -
+	:ARG0 (a / això)
+	:ARG1 (o / opinió
+	      :poss (j / jo))
+	:degree (g / gaire))
+
+
+29. Quan en trobava una que em semblava una mica lúcida, hi
+feia l'experiment del dibuix numero 1, que sempre he
+conservat. 
+
+(f / fer-01
+     :ARG0 (j / jo)
+     :ARG1 (e / experiment
+		:ARG1-of (c / conservar-01
+			 :ARG0 j
+			 :time (s / sempre))
+	   :mod (d / dibuix
+		:mod 1))
+     :ARG2 p
+     :time (t / trobar-01
+	   :ARG0 j
+	   :ARG1 (p / persona
+	   	:mod (l / lúcida
+		:degree (u / una-mica)))))
+
+
+30. Volia saber si era realment comprensiva. 
+
+(v / voler-01
+	:ARG0 (j / jo)
+	:ARG1 (s / saber
+	      :condition (c / comprensiva-01
+			 :ARG0 (p / persona))))
+
+31. Però sempre em responia: "És un barret." 
+
+(c / contrast-01
+   :ARG0 (r / respondre-01
+		:ARG0 (p / persona)
+		:ARG1 (b / barret
+	      	:domain (d / dibuix)
+		:ARG2 (j / jo)
+
+32. Aleshores ja no li parlava ni de boes, ni de selves verges, ni d'estrelles. 
+
+(p / parlar-01
+	:ARG0 (j /jo)
+	:ARG1 (o / o
+	      :op1 (b / boa)
+	      :op1 (s / selva
+		   :mod (v / verge))
+	      :op3 (e / estrella))
+	:ARG2 (p2 / persona)
+	:time (a / aleshores)
+	:polarity -)
+
+33. Em posava al seu nivell. 
+
+(p / posar-se-01
+	:ARG0 (j / jo)
+	:ARG1 (n / nivell
+	      :poss (e / ella)))
+
+34. Li parlava de bridge, de golf, de política i de corbates. 
+
+(p / parlar-01
+	:ARG0 (j / jo)
+	:ARG1 (o / or
+	      :op1 (b / bridge)
+	      :op2 (g / golf)
+	      :op3 (p / política)
+	      :op4 (c / corbata)
+
+
+35. I la persona gran estava ben contenta d'haver conegut un home
+tan assenyat.
+
+(e / estar-01
+	:ARG0 (p / persona
+	      :mod (g / gran))
+	:ARG1 (c / contenta)
+	:ARG2 (c2 / conéixer
+	      :ARG0 p
+	      :ARG1 (h / home
+		    :mod (a / assenyat
+		         :degree (t / tan)))))
+
+
+36. O sigui que he viscut sol, sense ningú amb qui de veritat
+poder parlar, fins que vaig tenir una avaria al desert del Sahara,
+fa sis anys. 
+
+(c / cause-01
+      :ARG1 (v / viure-01
+            :ARG0 (j / jo
+                  :ARG0-of (p / parlar-01 :polarity -
+                        :ARG2 (n / ningú)
+                        :manner (v2 / veritat)))
+            :manner (s / sol)
+            :duration (f / fins
+                  :op1 (t / tenir-01
+                        :ARG0 j
+                        :ARG1 (a / avaria
+                        :location (d / desert :wiki "Sahara" 
+                        :time (a2 / abans
+                              :op1 (a3 / ara)
+                              :quant (t2 / temporal-quantity :quant 6
+                                    :unit (a4 / any)))))))
+
+37. S'havia trencat alguna cosa del motor.
+
+(t / trencar-01
+	:ARG0 (c / cosa
+	      :part-of (m / motor)))
+
+
+38. I com que no anava amb cap mecànic ni amb cap passatger, em vaig preparar per mirar de fer, tot sol, una reparació difícil. 
+
+(i / i
+  :op2 (c / cause-01
+         :ARG0 (a / anar-01
+                 :ARG0 (j / jo)
+                 :ARG1 (o / o
+                         :op1 (m / mecànic)
+                         :op2 (p / passatger))
+                 :accompanier j
+                 :polarity -)
+         :ARG1 (p2 / preparar-01
+                 :ARG0 j
+                 :ARG1 (m2 / mirar-01
+			:ARG0 j
+			:ARG1 (f / fer-01
+				:ARG0 j
+				:ARG1 (r / reparar
+                        	      :mod (d / difícil)))
+                	:mod (s / sol
+                        :degree (t / tot)))))
+
+
+39. Per mi era una qüestió de vida o mort. 
+
+(q / questió-01
+      :ARG0 (j / jo)
+      :ARG1 (o / or
+            :op1 (l / live-01)
+            :op2 (d / die-01))
+
+
+40. Amb prou feines tenia aigua per beure per a vuit dies.
+
+(t / tenir-01
+     :ARG0 (j / jo)
+     :ARG1 (a / aigua
+	   :purpose (b / beure 01
+		    :ARG0 j
+		    :time (t / temporal-quantity :quant 8
+			  :unit (d / dia)))
+     :quant (a2 / amb-prou-feines))
+
+
+41. La primera nit, doncs, em vaig adormir a la sorra a mil milles
+de cap terra habitada. 
+
+(a / adormir-se-01
+	:ARG0 (j / jo)
+	:duration (t / temporal-quantity
+		     :quant 1
+		     :ord (o / ordinal-entity
+			     :value 1)))
+	:location (s / sorra)
+
+
+
+42. Estava molt més aïllat que un nàufrag en un rai al mig de l'oceà. 
+
+(a / aïllat-01
+     :ARG0 (j / jo)
+     :degree (m / més
+	     :degree (m2 / molt))
+     :compared-to (p / persona
+		  :ARG0-of (n / naufragar-01)
+		  :location (r / rai)
+			    :location (o / oceà
+				:part (m3 / mig))))
+
+43. O sigui que imagineu-vos la sorpresa que vaig tenir, a trenc d'alba, quan una veueta molt especial em va despertar.
+
+(i / imaginar-01
+	:ARG0 (v / vosaltres)
+	:ARG1 (t / tenir-01
+		:ARG0 (j / jo)
+		:ARG1 (s / sorpresa)
+		:mode imperative
+		:time (t2 / trenc
+	      	      :mod (a / alba))
+		      :time-of (d / despertar-01
+			       :ARG0 (v2 / veueta
+				     :mod (e / especial
+				          :degree (m / molt)
+			       :ARG1 j
+	
+
+44. Deia: - Si us plau... dibuixa'm un be!
+
+(d / dir-01
+	:ARG0 (e / ell)
+	:ARG1 (d / dibuixar-01 :mode imperative :polite +
+	      :ARG0 (t / tú)
+	      :ARG1 (b / be)
+	      :ARG2 (e2 / jo)
+		
+
+45. ¿Eh!?
+
+(s / string-entity :value "eh")
+
+46. - ¡Dibuixa'm un be...
+
+(d / dibuixar-01
+	:ARG0 (t / tú)
+	:ARG1 (b / be)
+	:ARG2 (j / jo)
+	:mode imperative)
+
+
+47. D'un bot em vaig posar dret com si m'hagués caigut un llamp.
+
+(p / posar-01
+	:ARG0 (j / jo)
+	:ARG1 (d / dret)
+	:manner (b / bot
+		:quant 1))
+	:conj-as-if (c / caure-01
+		:ARG0 (l / llamp)
+		:ARG1 j))
+	        
+48. Vaig fregar-me bé els ulls. 
+
+(f / fregar-se-01
+	:ARG0 (j / jo)
+	:ARG1 (u / ull)
+	:degree (b / bé))
+
+
+49. Vaig mirar bé. 
+
+(m / mirar-01
+	:ARG0 (j / jo)
+	:manner (b / bé))
+
+
+50. I vaig veure un jovenet realment extraordinari que m'observava amb aire greu.
+
+(v / veure-01
+	:ARG0 (j / jo)
+	:ARG1 (j2 / jovenet
+	      :mod (e / extraordinari))
+	      :ARG0-of (o / observar-01
+		       :ARG1 j
+		       :manner (a / aire
+			       :mod (g / greu))))
