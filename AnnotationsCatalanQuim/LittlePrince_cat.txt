@@ -190,6 +190,7 @@ in Catalan.
 			       :op1 (o / oberta)
 		    	       :op2 (t / tancada)))))
    :op2 (r / recommend-01
+	:ARG0 p
 	:ARG1 (i / interessar-se-01
 	      :ARG1 (j / jo)
 	      :ARG2 (i / i
@@ -291,42 +292,44 @@ in Catalan.
 27. És molt útil , si t'has perdut durant la nit . (lpp_1943.27)
 
 (u / útil
-	:domain (d / distingir-01
-		:manner (a / a primer cop d'ull))
-	:condition (p / perdut-01
+	:domain (a / això)
+	:condition (p / perdre-01
 		:ARG0 (t / tú)
-		:duration (t / temporal-quantity
+		:ARG1 t
+		:duration (t2 / temporal-quantity
 			:unit (n / nit))))
 
 28. D'aquesta manera , al llarg de la vida , he tingut un pila de contactes amb una pila de gent seriosa . (lpp_1943.28)
 
-(t / tenir-01 
-   :ARG0 (j / jo)
-   :ARG1 (c / contacte)
-	 :quant (p / pila)
-   :ARG2 (g / gent
-	 :mod (s / seriosa)
-	 	:quant (p / pila))
-   :time (l / llarg
-	 :poss (v / vida)))
-   
+
+(c / contactar-01
+	:ARG0 (j / jo)
+	:ARG1 (g / gent
+		:mod (s / seriosa)
+		:quant (p / pila))
+	:quant (p2 / pila)
+	:time (ll / llarg
+		:poss (v / vida))
+	:manner (m / manera
+		:mod (a / aquesta)))
+	 
 
 29. He viscut molt entre les persones grans . (lpp_1943.29)
 
 (v / viure-01
 	:ARG0 (j / jo)
 	:degree (m / molt)
-	:accompanier (p / persona
-		:mod (g / gran)))
+	:location (e / entre
+		:op1 (p / persona
+			:mod (g / gran))))
 	
 30. Les he vistes de molt a prop . (lpp_1943.30)
 
 (v / veure-01
 	:ARG0 (j / jo)
-	:manner (p / prop)
-		:degree (m / molt)
-	:ARG1 (p / persona
-		:mod (g / gran)))
+	:manner (p / prop
+		:degree (m / molt))
+	:ARG1 (e / elles))
 
 31. Això no ha fet millorar gaire la meva opinió . (lpp_1943.31)
 
@@ -339,38 +342,42 @@ in Catalan.
 
 32. Quan en trobava una que em semblava una mica lúcida , hi feia l'experiment del dibuix numero 1 , que sempre he conservat . (lpp_1943.32)
 
-(f / fer-01
+(f / fer-02
      :ARG0 (j / jo)
-     :ARG1 (e / experiment
-		:ARG1-of (c / conservar-01
-			 :ARG0 j
-			 :time (s / sempre))
+     :ARG1 (e / experiment	
 	   :mod (d / dibuix
-		:mod 1))
+		:mod 1
+		:ARG1-of (c / conservar-01
+			:ARG0 j
+			:time (s / sempre))))
      :ARG2 p
      :time (t / trobar-01
 	   :ARG0 j
 	   :ARG1 (p / persona
 	   	:mod (l / lúcida
-		:degree (u / una-mica)))))
+			:degree (m / mica)))))
 
 
 33. Volia saber si era realment comprensiva . (lpp_1943.33)
 
-(v / voler-01
+
+(s / saber-01
 	:ARG0 (j / jo)
-	:ARG1 (s / saber
-	      :condition (c / comprensiva-01
-			 :ARG0 (p / persona))))
+	:ARG1-of (v / voler-01
+		:ARG0 j)
+	:ARG1 (c / comprendre-01 :mode interrogative
+		:ARG0 (p / ella)))+
+
 
 34. Però sempre em responia : " És un barret . " (lpp_1943.34)
 
 (c / contrast-01
-   :ARG0 (r / respondre-01
-		:ARG0 (p / persona)
+   :ARG2 (r / respondre-01
+		:ARG0 (e / ella)
 		:ARG1 (b / barret
-	      	:domain (d / dibuix)
-		:ARG2 (j / jo)
+	      		:domain (a / això))
+		:time (s /sempre)))
+		
 
 35. Aleshores ja no li parlava ni de boes , ni de selves verges , ni d'estrelles . (lpp_1943.35)
 
@@ -381,7 +388,7 @@ in Catalan.
 	      :op1 (s / selva
 		   :mod (v / verge))
 	      :op3 (e / estrella))
-	:ARG2 (p2 / persona)
+	:ARG2 (e / ella)
 	:time (a / aleshores)
 	:polarity -)
 
