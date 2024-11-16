@@ -1,12 +1,12 @@
 AMRs (Abstract Meaning Representations) for 50 sentences of Le Petit Prince, a 1943 novel by Antoine de Saint-Exupery
 in Catalan.
 
-1. Capítol 1. (lpp_1943.1)
+1. Capítol 1 . (lpp_1943.1)
 
 (c / capítol
      :mod 1)
 
-2. Quan tenia sis anys, una vegada vaig veure (see) un dibuix magnífic en un llibre sobre la selva verge que es deia Històries viscudes. (lpp_1943.2)
+2. Quan tenia sis anys , una vegada vaig veure un dibuix magnífic en un llibre sobre la selva verge que es deia Històries viscudes . (lpp_1943.2)
 
 (v / veure-01
 	:ARG0 (j / jo)
@@ -23,7 +23,7 @@ in Catalan.
 		    :unit (a / any))))
 
 
-3. Representava (represent) una boa empassantse (swallow) una fera. (lpp_1943.3)
+3. Representava una boa empassantse una fera . (lpp_1943.3)
 
 (r / representar-01
 	:ARG0 (d / dibuix
@@ -31,16 +31,16 @@ in Catalan.
            :ARG0-of (e / empassar-se-01
                       	:ARG1 (f / fera))))
 
-4. Aquí teniu la còpia (copy) del dibuix. (lpp_1943.4)
+4. Aquí teniu la còpia del dibuix . (lpp_1943.4)
 
 (b / be-located-at-91
-      :ARG1 (t2 / thing
+      :ARG1 (t / thing
             :ARG2-of (c / copiar-01
                   :ARG1 (d / dibuix
       :ARG2 (a / aquí))
 
 
-5. El llibre deia: "Les boes s'empassen (swallow) la presa tota sencera, sense mastegar (chew). (lpp_1943.5)
+5. El llibre deia : "Les boes s'empassen la presa tota sencera, sense mastegar . (lpp_1943.5)
 
 (d / dir-01
       :ARG0 (l / llibre)
@@ -54,21 +54,21 @@ in Catalan.
                   :ARG1 p)))
 
 
-6. Després no es poden moure (move) i dormen (sleep) durant els sis mesos de la digestió (digest)." (lpp_1943.6)
+6. Després no es poden moure i dormen durant els sis mesos de la digestió . " (lpp_1943.6)
 
 (i / i
       :op1 (p / possible-01 :polarity -
             :ARG1 (m / moure-01
-                  :ARG0 (e / ella)
+                  :ARG0 (e / elles)
                   :time (d / després)))
       :op2 (d / dormir-01
             :ARG0 e
             :duration (t / temporal-quantity :quant 6
                   :unit (m2 / mes)
-                  WRONG****:duration-of (d2 / digerir-01
+                  :duration-of (d2 / digerir-01
                      		:ARG0 e)))
 			
-7. Hi vaig rumiar (reflect) molt, aleshores, en les aventures de la selva . (lpp_1943.7)
+7. Hi vaig rumiar molt , aleshores , en les aventures de la selva . (lpp_1943.7)
 
 (r / rumiar-02
       :ARG0 (j / j)
@@ -79,29 +79,29 @@ in Catalan.
 
 
 
-8. I, per la meva banda, amb un llapis de color, vaig fer el meu primer dibuix (draw). (lpp_1943.8)
+8. I , per la meva banda , amb un llapis de color , vaig fer el meu primer dibuix . (lpp_1943.8)
 
 (i / i
       :op2 (f / fer-01
             :ARG0 (j / jo)
-            :ARG1 (d / dibuixar-01
+            :ARG1 (d / dibuix
 		  :ord (o / ordinal-entity :value 1)))
 	    :instrument (l / llapis
 		    :mod (c / color))))
 
 
-9. El meu dibuix número 1. (lpp_1943.9)
+9. El meu dibuix número 1 . (lpp_1943.9)
 
 (d / dibuix 
       :mod 1
       :poss (j / jo))
 
-10. Era així: (lpp_1943.10)
+10. Era així : (lpp_1943.10)
 
 (d / dibuix
 	:mod (a / així)
 
-11. Vaig ensenyar (show) la meva obra mestra a les persones grans i els vaig preguntar (ask) si el dibuix els feia por (scare). (lpp_1943.11)
+11. Vaig ensenyar la meva obra mestra a les persones grans i els vaig preguntar si el dibuix els feia por . (lpp_1943.11)
 
 (i / i
 	:op1 (e / ensenyar-01
@@ -112,30 +112,26 @@ in Catalan.
 		   :mod (g / gran)))
 	:op2 (p2 / preguntar-01
 	     :ARG0 j
-	     :ARG1-of (f / fer-por-01)
+	     :ARG1-of (f / fer-por-01 :mode interrogative
+		      :ARG0 (d / dibuix)
+		      :ARG1 p		            
 	     :ARG2 p
-		   :mod g
+		   
 
-12. Em van respondre (answer) : (lpp_1943.12)
+12. Em van respondre : (lpp_1943.12)
 
 (r / respondre-01
-	:ARG0 (e / ell)
-	:ARG2 (f / fer-por-01)
-	      :ARG0 (b / barret)
-	:ARG1-of (c / cause-01
+     :ARG0 (e / ells)
+
+13. " Per què hauria de fer por un barret ? " (lpp_1943.13)
+
+(f / fer-por-01)
+     :ARG0 (b / barret)
+     :ARG1-of (c / cause-01
               :ARG0 (a2 / amr-unknown)))
 
 
-13. "¿Per què hauria de fer por (scare) un barret?" (lpp_1943.13)
-
-
-
-**ANNOTATE****ANNOTATE****ANNOTATE**
-
-
-
-
-14. El meu dibuix no representava un barret. (lpp_1943.14)
+14. El meu dibuix no representava un barret . (lpp_1943.14)
 
 (r / representar-01 :polarity -
 	:ARG0 (d / dibuix)
@@ -143,81 +139,81 @@ in Catalan.
 	:ARG1 (b / barret))
 
 
-15. Representava una boa que digeria un elefant. (lpp_1943.15)
+15. Representava una boa que digeria un elefant . (lpp_1943.15)
 
 (r / representar-01
 	:ARG0 (b / boa
-	      :ARG1-of (d / digerir
+	      :ARG1-of (d / digerir-01
 		       :ARG2 (e /elefant))))
 
-16. Aleshores vaig dibuixar l'interior de la boa, perquè les persones grans ho poguessin entendre. (lpp_1943.16)
+16. Aleshores vaig dibuixar l'interior de la boa , perquè les persones grans ho poguessin entendre . (lpp_1943.16)
 
 (d / dibuixar-01
 	:ARG0 (j / jo)
 	:ARG1 (i / interior
 	      :part-of (b / boa))
 	:purpose (p / possible-01
-		:ARG1 (e / entendre-01
-                      :ARG0 (p / persona
-			    :mod (g / gran))
-		      :ARG1 (h / ho))))
+		  :ARG1 (e / entendre-01
+                        :ARG0 (p / persona
+			      :mod (g / gran))
+		        :ARG1 (h / ho))))
 	
 
-17. Sempre necessiten explicacions. (lpp_1943.17)
+17. Sempre necessiten explicacions . (lpp_1943.17)
 
 (n / necessitar-01
 	:ARG0 (e / ell)
-	:ARG1 (e2 / explicació))
+	:ARG1 (e2 / explicació)
+	:time (s / sempre))
 
 
-18. El meu dibuix número 2 era així: (lpp_1943.18)
+18. El meu dibuix número 2 era així : (lpp_1943.18)
 
-(d / dibuix-01
+(d / dibuix
 	:mod 2
 	:mod (a / així)
 	:poss (j / jo))
 	
 
-19. Les persones grans em van aconsellar que deixés estar els dibuixos de boes obertes i tancades i que més valia que m'interessés per la geografia, la història, el càlcul i la
-gramàtica. (lpp_1943.19)
+19. Les persones grans em van aconsellar que deixés estar els dibuixos de boes obertes i tancades i que més valia que m'interessés per la geografia , la història , el càlcul i la gramàtica . (lpp_1943.19)
 
 (i / i
    :op1 (a / aconsellar-01
 	:ARG0 (p / persona
 	      :mod (g / gran))
-	:ARG1 (d / deixar-estar-01
-	      :ARG0 (j / jo)
+	:ARG1 (j / jo)
+	:ARG2 (d / deixar-estar-01
+	      :ARG0 j
 	      :ARG1 (d / dibuix
 		    :topic (b / boa
-		          :mod (i / i
+		          :mod (i / i2
 			       :op1 (o / oberta)
 		    	       :op2 (t / tancada)))))
-   :op1 (v / valer-01
-	:ARG0 (i / interessar-se-01
-	      :ARG0 (j / jo)
-	      :ARG1 (i / i
+   :op2 (r / recommend-01
+	:ARG1 (i / interessar-se-01
+	      :ARG1 (j / jo)
+	      :ARG2 (i / i
 		    :op1 (g / geografia)
 		    :op2 (h / història)
 		    :op3 (c / càlcul)
 		    :op4 (g2 / gramàtica)))
-	:degree (m / més)))
+
 	
-20. Així va ser que vaig abandonar a l'edat de sis anys una magnífica carrera de pintor. (lpp_1943.20)
+20. Així va ser que vaig abandonar a l'edat de sis anys una magnífica carrera de pintor . (lpp_1943.20)
 
 (c / cause-01
      :ARG0 (a / així)
-     :ARG1 (a2 / abandonar-01
+     :ARG1 (a2 / abandonar-07
 	   :ARG0 (j / jo)
 	   :ARG1 (c / carrera
 		 :mod (p / pintor)
-		      :mod (m / magnífica)))
-     :time (e / edat-01
-	   :ARG0 j
-	   :ARG1 (t / temporal-quantity :quant 6
-		 :unit (a3 / any))))
+		 :mod (m / magnífica)))
+     :time (e / edat
+	   :mod (t / temporal-quantity :quant 6
+		     :unit (a3 / any))))
 	
 
-21. M'havia desanimat el fracàs del dibuix número 1 i del dibuix número 2. (lpp_1943.21)
+21. M'havia desanimat el fracàs del dibuix número 1 i del dibuix número 2 . (lpp_1943.21)
 
 (d / desanimar-01 
 	:ARG0 (f / fracassar-01
@@ -231,7 +227,7 @@ gramàtica. (lpp_1943.19)
 	:ARG1 (j / jo))
 
 
-22. Les persones grans no entenen mai res, totes soles, i per als nens és molt pesat haver-los de donar sempre explicacions i més explicacions. (lpp_1943.22)
+22. Les persones grans no entenen mai res , totes soles , i per als nens és molt pesat haver-los de donar sempre explicacions i més explicacions . (lpp_1943.22)
 
 (i / i
       :op1 (e / entendre-01 :polarity -
@@ -243,14 +239,14 @@ gramàtica. (lpp_1943.19)
       :op2 (p / pesat
             :domain (d / donar-01
                   :ARG0 (n / nen)
-                  :ARG1 (i / i
+                  :ARG1 (i2 / i
 			:op1 (e2 / explicació)
 			:op2 (e2
 			     :degree (m / més))
-                  :ARG2 g
+                  :ARG2 p2
                   :time (s / sempre))))
 
-23. Per això vaig haver d'escollir un altre ofici i vaig aprendre a pilotar avions. (lpp_1943.23)
+23. Per això vaig haver d'escollir un altre ofici i vaig aprendre a pilotar avions . (lpp_1943.23)
 
 (c / cause-01
   :ARG1 (i / i
@@ -264,7 +260,7 @@ gramàtica. (lpp_1943.19)
                          :ARG0 j
                          :ARG1 (a3 / avió)))))
 	
-24. He volat una mica per tot el món. (lpp_1943.24)
+24. He volat una mica per tot el món . (lpp_1943.24)
 
 (v / volar-01
 	:ARG0 (j / jo)
@@ -272,25 +268,27 @@ gramàtica. (lpp_1943.19)
 	      :mod (t / tot)))
 
 
-25. I la geografia, és veritat, m'ha servit molt. (lpp_1943.25)
+25. I la geografia , és veritat , m'ha servit molt . (lpp_1943.25)
 
-(s / servir-01
-	:ARG0 (g / geografia)
-	:ARG1 (j / jo)
+(s / servir-05
+	:ARG0 (j / jo)
+	:ARG1 (g / geografia)
+	:degree (m / molt) 
 
-
-26. Sabia distingir, al primer cop d'ull, la Xina d'Arizona. (lpp_1943.26)
+26. Sabia distingir , al primer cop d'ull , la Xina d'Arizona . (lpp_1943.26)
 
 (s / saber-01
 	:ARG0 (j / jo)
 	:ARG1 (d / distingir-01
 		:ARG0 j
-		:ARG1 (x / Xina)
-		:ARG2 (a / Arizona)
+		:ARG1 (c / country :wiki "Xina"
+                  :name (n / name :op1 "Xina"))
+            	:ARG2 (s / state :wiki "Arizona"
+                  :name (n2 / name :op1 "Arizona"))
 		:manner (a2/ a primer cop-d'ull)))
 
 
-27. És molt útil, si t'has perdut durant la nit. (lpp_1943.27)
+27. És molt útil , si t'has perdut durant la nit . (lpp_1943.27)
 
 (u / útil
 	:domain (d / distingir-01
@@ -300,7 +298,7 @@ gramàtica. (lpp_1943.19)
 		:duration (t / temporal-quantity
 			:unit (n / nit))))
 
-28. D'aquesta manera, al llarg de la vida, he tingut un pila de contactes amb una pila de gent seriosa. (lpp_1943.28)
+28. D'aquesta manera , al llarg de la vida , he tingut un pila de contactes amb una pila de gent seriosa . (lpp_1943.28)
 
 (t / tenir-01 
    :ARG0 (j / jo)
@@ -313,7 +311,7 @@ gramàtica. (lpp_1943.19)
 	 :poss (v / vida)))
    
 
-29. He viscut molt entre les persones grans. (lpp_1943.29)
+29. He viscut molt entre les persones grans . (lpp_1943.29)
 
 (v / viure-01
 	:ARG0 (j / jo)
@@ -321,7 +319,7 @@ gramàtica. (lpp_1943.19)
 	:accompanier (p / persona
 		:mod (g / gran)))
 	
-30. Les he vistes de molt a prop. (lpp_1943.30)
+30. Les he vistes de molt a prop . (lpp_1943.30)
 
 (v / veure-01
 	:ARG0 (j / jo)
@@ -330,7 +328,7 @@ gramàtica. (lpp_1943.19)
 	:ARG1 (p / persona
 		:mod (g / gran)))
 
-31. Això no ha fet millorar gaire la meva opinió. (lpp_1943.31)
+31. Això no ha fet millorar gaire la meva opinió . (lpp_1943.31)
 
 (m / millorar-01 :polarity -
 	:ARG0 (a / això)
@@ -339,9 +337,7 @@ gramàtica. (lpp_1943.19)
 	:degree (g / gaire))
 
 
-32. Quan en trobava una que em semblava una mica lúcida, hi
-feia l'experiment del dibuix numero 1, que sempre he
-conservat. (lpp_1943.32)
+32. Quan en trobava una que em semblava una mica lúcida , hi feia l'experiment del dibuix numero 1 , que sempre he conservat . (lpp_1943.32)
 
 (f / fer-01
      :ARG0 (j / jo)
@@ -359,7 +355,7 @@ conservat. (lpp_1943.32)
 		:degree (u / una-mica)))))
 
 
-33. Volia saber si era realment comprensiva. (lpp_1943.33)
+33. Volia saber si era realment comprensiva . (lpp_1943.33)
 
 (v / voler-01
 	:ARG0 (j / jo)
@@ -367,7 +363,7 @@ conservat. (lpp_1943.32)
 	      :condition (c / comprensiva-01
 			 :ARG0 (p / persona))))
 
-34. Però sempre em responia: "És un barret." (lpp_1943.34)
+34. Però sempre em responia : " És un barret . " (lpp_1943.34)
 
 (c / contrast-01
    :ARG0 (r / respondre-01
@@ -376,7 +372,7 @@ conservat. (lpp_1943.32)
 	      	:domain (d / dibuix)
 		:ARG2 (j / jo)
 
-35. Aleshores ja no li parlava ni de boes, ni de selves verges, ni d'estrelles. (lpp_1943.35)
+35. Aleshores ja no li parlava ni de boes , ni de selves verges , ni d'estrelles . (lpp_1943.35)
 
 (p / parlar-01
 	:ARG0 (j /jo)
@@ -389,14 +385,14 @@ conservat. (lpp_1943.32)
 	:time (a / aleshores)
 	:polarity -)
 
-36. Em posava al seu nivell. (lpp_1943.36)
+36. Em posava al seu nivell . (lpp_1943.36)
 
 (p / posar-se-01
 	:ARG0 (j / jo)
 	:ARG1 (n / nivell
 	      :poss (e / ella)))
 
-37. Li parlava de bridge, de golf, de política i de corbates. (lpp_1943.37)
+37. Li parlava de bridge , de golf , de política i de corbates . (lpp_1943.37)
 
 (p / parlar-01
 	:ARG0 (j / jo)
@@ -408,7 +404,7 @@ conservat. (lpp_1943.32)
 
 
 38. I la persona gran estava ben contenta d'haver conegut un home
-tan assenyat. (lpp_1943.38)
+tan assenyat . (lpp_1943.38)
 
 (e / estar-01
 	:ARG0 (p / persona
@@ -426,9 +422,7 @@ tan assenyat. (lpp_1943.38)
      :mod 2)
 
 
-40. O sigui que he viscut sol, sense ningú amb qui de veritat
-poder parlar, fins que vaig tenir una avaria al desert del Sahara,
-fa sis anys. (lpp_1943.40)
+40. O sigui que he viscut sol , sense ningú amb qui de veritat poder parlar , fins que vaig tenir una avaria al desert del Sahara , fa sis anys . (lpp_1943.40)
 
 (c / cause-01
       :ARG1 (v / viure-01
@@ -447,14 +441,14 @@ fa sis anys. (lpp_1943.40)
                               :quant (t2 / temporal-quantity :quant 6
                                     :unit (a4 / any)))))))
 
-41. S'havia trencat alguna cosa del motor. (lpp_1943.41)
+41. S'havia trencat alguna cosa del motor . (lpp_1943.41)
 
 (t / trencar-01
 	:ARG0 (c / cosa
 	      :part-of (m / motor)))
 
 
-42. I com que no anava amb cap mecànic ni amb cap passatger, em vaig preparar per mirar de fer, tot sol, una reparació difícil. (lpp_1943.42) 
+42. I com que no anava amb cap mecànic ni amb cap passatger , em vaig preparar per mirar de fer , tot sol , una reparació difícil . (lpp_1943.42)
 
 (i / i
   :op2 (c / cause-01
@@ -478,8 +472,7 @@ fa sis anys. (lpp_1943.40)
 
 
 
-43. La primera nit, doncs, em vaig adormir a la sorra a mil milles
-de cap terra habitada. (lpp_1943.43)
+43. La primera nit , doncs , em vaig adormir a la sorra a mil milles de cap terra habitada . (lpp_1943.43)
 
 (a / adormir-se-01
 	:ARG0 (j / jo)
@@ -491,7 +484,7 @@ de cap terra habitada. (lpp_1943.43)
 
 
 
-44. Estava molt més aïllat que un nàufrag en un rai al mig de l'oceà. (lpp_1943.44)
+44. Estava molt més aïllat que un nàufrag en un rai al mig de l'oceà . (lpp_1943.44)
 
 (a / aïllat-01
      :ARG0 (j / jo)
@@ -503,7 +496,7 @@ de cap terra habitada. (lpp_1943.43)
 			    :location (o / oceà
 				:part (m3 / mig))))
 
-45. O sigui que imagineu-vos la sorpresa que vaig tenir, a trenc d'alba, quan una veueta molt especial em va despertar. (lpp_1943.45)
+45. O sigui que imagineu-vos la sorpresa que vaig tenir , a trenc d'alba , quan una veueta molt especial em va despertar . (lpp_1943.45)
 
 (i / imaginar-01
 	:ARG0 (v / vosaltres)
@@ -520,7 +513,7 @@ de cap terra habitada. (lpp_1943.43)
 			       :ARG1 j
 	
 
-46. Deia: - Si us plau... dibuixa'm un be! (lpp_1943.46)
+46. Deia : - Si us plau ... dibuixa'm un be ! (lpp_1943.46)
 
 (d / dir-01
 	:ARG0 (e / ell)
@@ -530,11 +523,11 @@ de cap terra habitada. (lpp_1943.43)
 	      :ARG2 (e2 / jo)
 		
 
-47. ¿Eh!? (lpp_1943.47)
+47. Eh ! ? (lpp_1943.47)
 
 (s / string-entity :value "eh")
 
-48. - ¡Dibuixa'm un be... (lpp_1943.48)
+48. - Dibuixa'm un be ... (lpp_1943.48)
 
 (d / dibuixar-01
 	:ARG0 (t / tú)
@@ -543,7 +536,7 @@ de cap terra habitada. (lpp_1943.43)
 	:mode imperative)
 
 
-49. D'un bot em vaig posar dret com si m'hagués caigut un llamp. (lpp_1943.49)
+49. D'un bot em vaig posar dret com si m'hagués caigut un llamp . (lpp_1943.49)
 
 (p / posar-01
 	:ARG0 (j / jo)
@@ -554,7 +547,7 @@ de cap terra habitada. (lpp_1943.43)
 		:ARG0 (l / llamp)
 		:ARG1 j))
 	        
-50. Vaig fregar-me bé els ulls. (lpp_1943.50)
+50. Vaig fregar-me bé els ulls . (lpp_1943.50)
 
 (f / fregar-se-01
 	:ARG0 (j / jo)
@@ -562,14 +555,14 @@ de cap terra habitada. (lpp_1943.43)
 	:degree (b / bé))
 
 
-51. Vaig mirar bé. (lpp_1943.51)
+51. Vaig mirar bé . (lpp_1943.51)
 
 (m / mirar-01
 	:ARG0 (j / jo)
 	:manner (b / bé))
 
 
-52. I vaig veure un jovenet realment extraordinari que m'observava amb aire greu. (lpp_1943.52)
+52. I vaig veure un jovenet realment extraordinari que m'observava amb aire greu . (lpp_1943.52)
 
 (v / veure-01
 	:ARG0 (j / jo)

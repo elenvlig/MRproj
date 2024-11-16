@@ -106,31 +106,27 @@ Version 1.6 - March 14, 2016
 
 10. It looked like this : (lpp_1943.10)
 
+
+(l / look-02
+      :ARG0 (i / it)
+      :ARG1 (t / this))
+     
+
+11. I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them . (lpp_1943.11)
+
 (a / and
-      :op1 (l / look-02
-            :ARG0 (i / it)
-            :ARG1 (t / this))
-      :op2 (s / show-01
+   :op1 (s / show-01
             :ARG0 (i2 / i)
             :ARG1 (m / masterpiece
                   :poss i2)
             :ARG2 (g / grown-up))
-      :op3 (a2 / ask-01
+   :op2 (a2 / ask-01
             :ARG0 i2
             :ARG1 (f / frighten-01 :mode interrogative
                   :ARG0 (p / picture
                         :ARG1-of (d / draw-01))
                   :ARG1 g)
             :ARG2 g))
-
-
-11. I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them . (lpp_1943.11)
-
-
-
-
-
-**ANNOTATE****ANNOTATE****ANNOTATE**
 
 
 
@@ -201,22 +197,17 @@ Version 1.6 - March 14, 2016
 
 18. My Drawing Number Two looked like this :  (lpp_1943.18)
 
-**ANNOTATE****ANNOTATE****ANNOTATE**
-
-      (l / look-02
-            :ARG0 (p / picture :wiki - :name (n / name :op1 "Drawing" :op2 "Number" :op3 "Two")
-                  :poss i)
-            :ARG1 (t2 / this))
+(l / look-02
+     :ARG0 (p / picture :wiki - :name (n / name :op1 "Drawing" :op2 "Number" :op3 "Two")
+           :poss i)
+     :ARG1 (t2 / this))
      
-
-
 
 19. The grown - ups ' response , this time , was to advise me to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar . (lpp_1943.19)
 
-**ANNOTATE****ANNOTATE****ANNOTATE**
 
 (a6 / and
-	:op2 (r / respond-01
+	:op1 (r / respond-01
             :ARG0 (g / grown-up)
             :ARG1 (i / i)
             :ARG2 (a / advise-01
@@ -234,16 +225,16 @@ Version 1.6 - March 14, 2016
                                                 :op1 (i2 / inside)
                                                 :op2 (o2 / outside))))
                               :ARG2 (a2 / aside))
-                        :op2 (d3 / devote-01
-                              :ARG0 i
-                              :ARG1 i
-                              :ARG2 (a4 / and
-                                    :op1 (g2 / geography)
-                                    :op2 (h / history)
-                                    :op3 (a5 / arithmetic)
-                                    :op4 (g3 / grammar))
-                              :ARG1-of (i4 / instead-of-91
-                                    :ARG2 d2))))
+          :op2 (d3 / devote-01
+               :ARG0 i
+               :ARG1 i
+               :ARG2 (a4 / and
+                     :op1 (g2 / geography)
+                     :op2 (h / history)
+                     :op3 (a5 / arithmetic)
+                     :op4 (g3 / grammar))
+               :ARG1-of (i4 / instead-of-91
+                        :ARG2 d2))))
             :time (t4 / time
                   :mod (t5 / this))))
 
@@ -307,27 +298,20 @@ Version 1.6 - March 14, 2016
 
 24. I have flown a little over all parts of the world ; (lpp_1943.24)
 
-**ANNOTATE****ANNOTATE****ANNOTATE**
-
-
-(a / and
-      :op1 (f / fly-01
-            :ARG0 i
-            :location (o / over
-                  :op1 (p2 / part
-                        :part-of (w / world))))
+(f / fly-01
+     :ARG0 i
+     :location (o / over
+               :op1 (p2 / part
+                    :part-of (w / world))))
       
-
 
 25. And it is true that geography has been very useful to me . (lpp_1943.25)
 
 
-**ANNOTATE****ANNOTATE****ANNOTATE**
-
-:op2 (u / useful-05
-            :ARG0 (i / i)
-            :ARG1 (g / geography)
-            :degree (v / very)))
+(u / useful-05
+     :ARG0 (i / i)
+     :ARG1 (g / geography)
+     :degree (v / very)))
 
 
 
