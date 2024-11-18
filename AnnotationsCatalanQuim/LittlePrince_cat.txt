@@ -1,5 +1,4 @@
-AMRs (Abstract Meaning Representations) for 50 sentences of Le Petit Prince, a 1943 novel by Antoine de Saint-Exupery
-in Catalan.
+AMRs (Abstract Meaning Representations) for 52 sentences of Le Petit Prince, a 1943 novel by Antoine de Saint-Exupery in Catalan.
 
 1. Capítol 1 . (lpp_1943.1)
 
@@ -23,7 +22,7 @@ in Catalan.
 		    :unit (a / any))))
 
 
-3. Representava una boa empassantse una fera . (lpp_1943.3)
+3. Representava una boa empassant-se una fera . (lpp_1943.3)
 
 (r / representar-01
 	:ARG0 (d / dibuix
@@ -59,19 +58,19 @@ in Catalan.
 (i / i
       :op1 (p / possible-01 :polarity -
             :ARG1 (m / moure-01
-                  :ARG0 (e / elles)
+                  :ARG0 (b / boa)
                   :time (d / després)))
-      :op2 (d / dormir-01
+      :op2 (d2 / dormir-01
             :ARG0 e
             :duration (t / temporal-quantity :quant 6
                   :unit (m2 / mes)
                   :duration-of (d2 / digerir-01
-                     		:ARG0 e)))
+                     		:ARG0 b)))
 			
 7. Hi vaig rumiar molt , aleshores , en les aventures de la selva . (lpp_1943.7)
 
 (r / rumiar-02
-      :ARG0 (j / j)
+      :ARG0 (jo / j)
       :ARG1 (a / aventura
             :location (s / selva))
       :manner (m / molt
@@ -85,9 +84,11 @@ in Catalan.
       :op2 (f / fer-01
             :ARG0 (j / jo)
             :ARG1 (d / dibuix
-		  :ord (o / ordinal-entity :value 1)))
+		  :ord (o / ordinal-entity :value 1))
 	    :instrument (l / llapis
-		    :mod (c / color))))
+		    :mod (c / color))
+	    :manner (b / banda
+		    :poss j)))
 
 
 9. El meu dibuix número 1 . (lpp_1943.9)
@@ -99,7 +100,7 @@ in Catalan.
 10. Era així : (lpp_1943.10)
 
 (d / dibuix
-	:mod (a / així)
+	:mod (a / així))
 
 11. Vaig ensenyar la meva obra mestra a les persones grans i els vaig preguntar si el dibuix els feia por . (lpp_1943.11)
 
@@ -114,18 +115,19 @@ in Catalan.
 	     :ARG0 j
 	     :ARG1-of (f / fer-por-01 :mode interrogative
 		      :ARG0 (d / dibuix)
-		      :ARG1 p		            
-	     :ARG2 p
+		      :ARG1 p)		            
+	     :ARG2 p))
 		   
 
 12. Em van respondre : (lpp_1943.12)
 
 (r / respondre-01
-     :ARG0 (e / ells)
+     :ARG0 (p / persona
+	   :mod (g / gran)))
 
 13. " Per què hauria de fer por un barret ? " (lpp_1943.13)
 
-(f / fer-por-01)
+(f / fer-por-01
      :ARG0 (b / barret)
      :ARG1-of (c / cause-01
               :ARG0 (a2 / amr-unknown)))
@@ -134,8 +136,8 @@ in Catalan.
 14. El meu dibuix no representava un barret . (lpp_1943.14)
 
 (r / representar-01 :polarity -
-	:ARG0 (d / dibuix)
-	      :poss (j /jo)
+	:ARG0 (d / dibuix
+	      :poss (j /jo))
 	:ARG1 (b / barret))
 
 
@@ -162,7 +164,8 @@ in Catalan.
 17. Sempre necessiten explicacions . (lpp_1943.17)
 
 (n / necessitar-01
-	:ARG0 (e / ell)
+	:ARG0 (p / persona
+	       :mod(g / gran))
 	:ARG1 (e2 / explicació)
 	:time (s / sempre))
 
@@ -178,26 +181,26 @@ in Catalan.
 19. Les persones grans em van aconsellar que deixés estar els dibuixos de boes obertes i tancades i que més valia que m'interessés per la geografia , la història , el càlcul i la gramàtica . (lpp_1943.19)
 
 (i / i
-   :op1 (a / aconsellar-01
+   :op1 (a / valer-més-01
 	:ARG0 (p / persona
 	      :mod (g / gran))
 	:ARG1 (j / jo)
 	:ARG2 (d / deixar-estar-01
 	      :ARG0 j
-	      :ARG1 (d / dibuix
+	      :ARG1 (d2 / dibuix
 		    :topic (b / boa
-		          :mod (i / i2
-			       :op1 (o / oberta)
-		    	       :op2 (t / tancada)))))
-   :op2 (r / recommend-01
+		           :mod (i2 / i
+			        :op1 (o / oberta)
+		    	        :op2 (t / tancada)))))
+   :op2 (r / aconsellar-01
 	:ARG0 p
-	:ARG1 (i / interessar-se-01
-	      :ARG1 (j / jo)
-	      :ARG2 (i / i
+	:ARG1 (i3 / interessar-se-01
+	      :ARG1 j
+	      :ARG2 (i4 / i
 		    :op1 (g / geografia)
 		    :op2 (h / història)
 		    :op3 (c / càlcul)
-		    :op4 (g2 / gramàtica)))
+		    :op4 (g2 / gramàtica)))))
 
 	
 20. Així va ser que vaig abandonar a l'edat de sis anys una magnífica carrera de pintor . (lpp_1943.20)
@@ -211,7 +214,7 @@ in Catalan.
 		 :mod (m / magnífica)))
      :time (e / edat
 	   :mod (t / temporal-quantity :quant 6
-		     :unit (a3 / any))))
+		:unit (a3 / any))))
 	
 
 21. M'havia desanimat el fracàs del dibuix número 1 i del dibuix número 2 . (lpp_1943.21)
@@ -219,12 +222,12 @@ in Catalan.
 (d / desanimar-01 
 	:ARG0 (f / fracassar-01
 		 :ARG1 (i / i
-		       :op1 (d / dibuix
+		       :op1 (d2 / dibuix
 			    :mod (n / número
-				 :mod 1))
-		       :op2 (d2 / dibuix
-			    :mod (n / número
-				 :mod 2)))
+				 :mod 1)))
+		       :op2 (d3 / dibuix
+			    :mod (n2 / número
+				 :mod 2)))))
 	:ARG1 (j / jo))
 
 
@@ -243,18 +246,19 @@ in Catalan.
                   :ARG1 (i2 / i
 			:op1 (e2 / explicació)
 			:op2 (e2
-			     :degree (m / més))
+			     :quant (m2 / més)))
                   :ARG2 p2
                   :time (s / sempre))))
 
 23. Per això vaig haver d'escollir un altre ofici i vaig aprendre a pilotar avions . (lpp_1943.23)
 
 (c / cause-01
-  :ARG1 (i / i
-          :op1 (e / escollir-01
-                 :ARG0 (j / jo)
-                 :ARG1 (o / ofici
-                         :mod (a2 / altre)))
+   :ARG1 (i / i
+          :op1 (o / obligate-01
+		  :ARG2 (e / escollir-01
+                 	:ARG0 (j / jo)
+                 	:ARG1 (o2 / ofici
+                              :mod (a2 / altre))))
           :op2 (a / aprendre-01
                  :ARG0 j
                  :ARG1 (p / pilotar-01
@@ -266,15 +270,18 @@ in Catalan.
 (v / volar-01
 	:ARG0 (j / jo)
 	:location (m / món
-	      :mod (t / tot)))
+	      :mod (t / tot))
+	:degree (m2 / mica))
 
 
 25. I la geografia , és veritat , m'ha servit molt . (lpp_1943.25)
 
 (s / servir-05
-	:ARG0 (j / jo)
-	:ARG1 (g / geografia)
-	:degree (m / molt) 
+     :ARG1-of (t / true-01)
+     :ARG0 (j / jo)
+     :ARG1 (g / geografia)
+     :degree (m / molt))
+     
 
 26. Sabia distingir , al primer cop d'ull , la Xina d'Arizona . (lpp_1943.26)
 
@@ -284,7 +291,7 @@ in Catalan.
 		:ARG0 j
 		:ARG1 (c / country :wiki "Xina"
                   :name (n / name :op1 "Xina"))
-            	:ARG2 (s / state :wiki "Arizona"
+            	:ARG2 (s2 / state :wiki "Arizona"
                   :name (n2 / name :op1 "Arizona"))
 		:manner (a2/ a primer cop-d'ull)))
 
@@ -294,10 +301,10 @@ in Catalan.
 (u / útil
 	:domain (a / això)
 	:condition (p / perdre-01
-		:ARG0 (t / tú)
-		:ARG1 t
-		:duration (t2 / temporal-quantity
-			:unit (n / nit))))
+		   :ARG0 (t / tu)
+		   :ARG1 t
+		   :duration (t2 / temporal-quantity
+			     :unit (n / nit))))
 
 28. D'aquesta manera , al llarg de la vida , he tingut un pila de contactes amb una pila de gent seriosa . (lpp_1943.28)
 
@@ -308,7 +315,7 @@ in Catalan.
 		:mod (s / seriosa)
 		:quant (p / pila))
 	:quant (p2 / pila)
-	:time (ll / llarg
+	:time (l / llarg
 		:poss (v / vida))
 	:manner (m / manera
 		:mod (a / aquesta)))
@@ -320,16 +327,17 @@ in Catalan.
 	:ARG0 (j / jo)
 	:degree (m / molt)
 	:location (e / entre
-		:op1 (p / persona
-			:mod (g / gran))))
+		  :op1 (p / persona
+		       :mod (g / gran))))
 	
 30. Les he vistes de molt a prop . (lpp_1943.30)
 
 (v / veure-01
 	:ARG0 (j / jo)
+	:ARG1 (p2 / persona
+	      :mod (g / gran)))
 	:manner (p / prop
 		:degree (m / molt))
-	:ARG1 (e / elles))
 
 31. Això no ha fet millorar gaire la meva opinió . (lpp_1943.31)
 
@@ -354,8 +362,10 @@ in Catalan.
      :time (t / trobar-01
 	   :ARG0 j
 	   :ARG1 (p / persona
-	   	:mod (l / lúcida
-			:degree (m / mica)))))
+		 :ARG1-of (s / semblar-02
+			  :ARG2 j
+	   		  :mod (l / lúcida
+			       :degree (m / mica)))))
 
 
 33. Volia saber si era realment comprensiva . (lpp_1943.33)
@@ -364,19 +374,19 @@ in Catalan.
 (s / saber-01
 	:ARG0 (j / jo)
 	:ARG1-of (v / voler-01
-		:ARG0 j)
+		 :ARG0 j)
 	:ARG1 (c / comprendre-01 :mode interrogative
-		:ARG0 (p / ella)))+
+	      :ARG0 (p / persona)))
 
 
 34. Però sempre em responia : " És un barret . " (lpp_1943.34)
 
 (c / contrast-01
-   :ARG2 (r / respondre-01
-		:ARG0 (e / ella)
-		:ARG1 (b / barret
-	      		:domain (a / això))
-		:time (s /sempre)))
+     :ARG2 (r / respondre-01
+	   :ARG0 (p / persona)
+	   :ARG1 (b / barret
+	         :domain (a / això))
+	   :time (s /sempre)))
 		
 
 35. Aleshores ja no li parlava ni de boes , ni de selves verges , ni d'estrelles . (lpp_1943.35)
@@ -387,8 +397,8 @@ in Catalan.
 	      :op1 (b / boa)
 	      :op1 (s / selva
 		   :mod (v / verge))
-	      :op3 (e / estrella))
-	:ARG2 (e / ella)
+	      :op3 (e2 / estrella))
+	:ARG2 (p2 / persona)
 	:time (a / aleshores)
 	:polarity -)
 
@@ -398,8 +408,7 @@ in Catalan.
 	:ARG0 (j / jo)
 	:ARG1 j
 	:ARG2 (n / nivell
-	      :poss (p2 / persona
-		    :mod (g / gran))))
+	      :poss (p2 / persona)))
 
 37. Li parlava de bridge , de golf , de política i de corbates . (lpp_1943.37)
 
@@ -408,10 +417,9 @@ in Catalan.
 	:ARG1 (a / and
 	      :op1 (b / bridge)
 	      :op2 (g / golf)
-	      :op3 (p2 / política)
+	      :op3 (p3 / política)
 	      :op4 (c / corbata))
-	:ARG2 (p3 / persona
-		:mod (g2 / gran)))
+	:ARG2 (p2 / persona))
 
 
 38. I la persona gran estava ben contenta d'haver conegut un home
@@ -442,18 +450,18 @@ tan assenyat . (lpp_1943.38)
       :ARG1 (v / viure-01
             :ARG0 (j / jo
                   :ARG0-of (p / parlar-01 :polarity -
-                        :ARG2 (n / ningú)
-                        :manner (v2 / veritat)))
+                           :ARG2 (n / ningú)
+                           :manner (v2 / veritat)))
             :manner (s / sol)
             :duration (f / fins
-                  :op1 (t / tenir-06
-                        :ARG0 j
-                        :ARG1 (a / avaria)
-                        :location (d / desert :wiki "Sahara") 
-                        :time (a2 / abans
-                              :op1 (a3 / ara)
-                              :quant (t2 / temporal-quantity :quant 6
-                                    :unit (a4 / any)))))))
+                      :op1 (t / tenir-06
+                           :ARG0 j
+                           :ARG1 (a / avaria)
+                           :location (d / desert :wiki "Sahara") 
+                           :time (a2 / abans
+                                 :op1 (a3 / ara)
+                                 :quant (t2 / temporal-quantity :quant 6
+                                        :unit (a4 / any)))))))
 
 41. S'havia trencat alguna cosa del motor . (lpp_1943.41)
 
@@ -465,7 +473,7 @@ tan assenyat . (lpp_1943.38)
 42. I com que no anava amb cap mecànic ni amb cap passatger , em vaig preparar per mirar de fer , tot sol , una reparació difícil . (lpp_1943.42)
 
 (i / i
-  :op2 (c / cause-01
+    :op2 (c / cause-01
          :ARG0 (a / anar-01
                  :ARG1 (j / jo)
                  :accompanier (o / o
@@ -488,7 +496,7 @@ tan assenyat . (lpp_1943.38)
 
 (a / adormir-se-01
 	:ARG0 (j / jo)
-	:location (s / sand)
+	:location (s / sorra)
 	:time (d / date-entity
 	      :dayperiod (n / nit)
 	      :ord (o / ordinal-entity :value 1))
@@ -496,7 +504,7 @@ tan assenyat . (lpp_1943.38)
 		:op1 (p / place
 		     :ARG1-of (h / habitar-01)
 		     :mod (c / cap))
-		:quant (d / distance-quantity :quant 1000
+		:quant (d2 / distance-quantity :quant 1000
 			:unit (m / milla))))
 
 
@@ -508,9 +516,9 @@ tan assenyat . (lpp_1943.38)
 	     :degree (m2 / molt))
      :compared-to (p / persona
 		  :ARG1-of (n / naufragar-01)
-		  :location (r / rai)
+		  :location (r / rai
 			    :location (o / oceà
-				:part (m3 / mig))))
+				:part (m3 / mig)))))
 
 45. O sigui que imagineu-vos la sorpresa que vaig tenir , a trenc d'alba , quan una veueta molt especial em va despertar . (lpp_1943.45)
 
@@ -523,11 +531,11 @@ tan assenyat . (lpp_1943.38)
                  :time (t / trenc
 		       :mod (a / alba))
                        :time-of (d / despertar-01
-                                :ARG0 (v / veu
+                                :ARG0 (v2 / veu
 				      :mod (p / petita)
                                       :mod (e / especial
-                                      	   :degree (m / molt)))))
-                                :ARG1 j)
+                                      	   :degree (m / molt)))
+                                :ARG1 j)))
 	   :mode imperative)))
 
 
@@ -538,7 +546,7 @@ tan assenyat . (lpp_1943.38)
 	:ARG1 (d2 / dibuixar-01 :mode imperative :polite +
 	      :ARG0 (t / tú)
 	      :ARG1 (b / be)
-	      :ARG2 (j / jo)
+	      :ARG2 (j / jo)))
 		
 
 47. Eh ! ? (lpp_1943.47)
@@ -563,7 +571,7 @@ tan assenyat . (lpp_1943.38)
 	:manner (s / saltar-01
 		:ARG0 j)
 	:conj-as-if (c / caure-01
-		    :ARG1 (ll / llamp)
+		    :ARG1 (l / llamp)
 		    :ARG4 j))
 	        
 50. Vaig fregar-me bé els ulls . (lpp_1943.50)
@@ -594,4 +602,4 @@ tan assenyat . (lpp_1943.38)
 	        :ARG0-of (o / observar-01
 		         :ARG1 j
 		         :manner (a / aire
-			         :mod (g / greu)))))
+			         :mod (g / greu))))))
