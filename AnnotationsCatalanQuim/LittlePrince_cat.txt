@@ -396,32 +396,39 @@ in Catalan.
 
 (p / posar-se-01
 	:ARG0 (j / jo)
-	:ARG1 (n / nivell
-	      :poss (e / ella)))
+	:ARG1 j
+	:ARG2 (n / nivell
+	      :poss (p2 / persona
+		    :mod (g / gran))))
 
 37. Li parlava de bridge , de golf , de política i de corbates . (lpp_1943.37)
 
 (p / parlar-01
 	:ARG0 (j / jo)
-	:ARG1 (o / or
+	:ARG1 (a / and
 	      :op1 (b / bridge)
 	      :op2 (g / golf)
-	      :op3 (p / política)
-	      :op4 (c / corbata)
+	      :op3 (p2 / política)
+	      :op4 (c / corbata))
+	:ARG2 (p3 / persona
+		:mod (g2 / gran)))
 
 
 38. I la persona gran estava ben contenta d'haver conegut un home
 tan assenyat . (lpp_1943.38)
 
-(e / estar-01
-	:ARG0 (p / persona
-	      :mod (g / gran))
-	:ARG1 (c / contenta)
-	:ARG2 (c2 / conéixer
-	      :ARG0 p
-	      :ARG1 (h / home
-		    :mod (a / assenyat
-		         :degree (t / tan)))))
+
+(i / i
+   :op2 (c / content-01
+	   :ARG0 (c2 / conèixer-02
+		    :ARG0 p
+		    :ARG1 (h / home
+			  :mod (a / assenyat
+			       :degree (t / tan))))
+	    :ARG1 (p / persona
+		  :mod (g / gran))
+	    :degree (b / ben)))
+
 
 39. Capítol 2 . (lpp_1943.39)
 
@@ -439,10 +446,10 @@ tan assenyat . (lpp_1943.38)
                         :manner (v2 / veritat)))
             :manner (s / sol)
             :duration (f / fins
-                  :op1 (t / tenir-01
+                  :op1 (t / tenir-06
                         :ARG0 j
-                        :ARG1 (a / avaria
-                        :location (d / desert :wiki "Sahara" 
+                        :ARG1 (a / avaria)
+                        :location (d / desert :wiki "Sahara") 
                         :time (a2 / abans
                               :op1 (a3 / ara)
                               :quant (t2 / temporal-quantity :quant 6
@@ -451,7 +458,7 @@ tan assenyat . (lpp_1943.38)
 41. S'havia trencat alguna cosa del motor . (lpp_1943.41)
 
 (t / trencar-01
-	:ARG0 (c / cosa
+	:ARG1 (c / cosa
 	      :part-of (m / motor)))
 
 
@@ -460,22 +467,20 @@ tan assenyat . (lpp_1943.38)
 (i / i
   :op2 (c / cause-01
          :ARG0 (a / anar-01
-                 :ARG0 (j / jo)
-                 :ARG1 (o / o
+                 :ARG1 (j / jo)
+                 :accompanier (o / o
                          :op1 (m / mecànic)
                          :op2 (p / passatger))
-                 :accompanier j
                  :polarity -)
-         :ARG1 (p2 / preparar-01
+         :ARG1 (p2 / preparar-02
                  :ARG0 j
-                 :ARG1 (m2 / mirar-01
+		 :ARG1 j
+                 :ARG2 (m2 / intentar-01
 			:ARG0 j
-			:ARG1 (f / fer-01
-				:ARG0 j
-				:ARG1 (r / reparar
-                        	      :mod (d / difícil)))
+			:ARG1 (r / reparar-01
+				:mod (d / difícil)))
                 	:mod (s / sol
-                        :degree (t / tot)))))
+                        	:degree (t / tot))))))
 
 
 
@@ -483,51 +488,57 @@ tan assenyat . (lpp_1943.38)
 
 (a / adormir-se-01
 	:ARG0 (j / jo)
-	:duration (t / temporal-quantity
-		     :quant 1
-		     :ord (o / ordinal-entity
-			     :value 1)))
-	:location (s / sorra)
-
+	:location (s / sand)
+	:time (d / date-entity
+	      :dayperiod (n / nit)
+	      :ord (o / ordinal-entity :value 1))
+	:location (r / relative-position
+		:op1 (p / place
+		     :ARG1-of (h / habitar-01)
+		     :mod (c / cap))
+		:quant (d / distance-quantity :quant 1000
+			:unit (m / milla))))
 
 
 44. Estava molt més aïllat que un nàufrag en un rai al mig de l'oceà . (lpp_1943.44)
 
-(a / aïllat-01
-     :ARG0 (j / jo)
+(a / aïllar-01
+     :ARG1 (j / jo)
      :degree (m / més
 	     :degree (m2 / molt))
      :compared-to (p / persona
-		  :ARG0-of (n / naufragar-01)
+		  :ARG1-of (n / naufragar-01)
 		  :location (r / rai)
 			    :location (o / oceà
 				:part (m3 / mig))))
 
 45. O sigui que imagineu-vos la sorpresa que vaig tenir , a trenc d'alba , quan una veueta molt especial em va despertar . (lpp_1943.45)
 
-(i / imaginar-01
-	:ARG0 (v / vosaltres)
-	:ARG1 (t / tenir-01
-		:ARG0 (j / jo)
-		:ARG1 (s / sorpresa)
-		:mode imperative
-		:time (t2 / trenc
-	      	      :mod (a / alba))
-		      :time-of (d / despertar-01
-			       :ARG0 (v2 / veueta
-				     :mod (e / especial
-				          :degree (m / molt)
-			       :ARG1 j
-	
+
+(c / cause-01
+     :ARG1 (i / imaginar-01
+           :ARG0 (v / vosaltres)
+           :ARG1 (s / sorprendre-01
+                 :ARG1 (j / jo)
+                 :time (t / trenc
+		       :mod (a / alba))
+                       :time-of (d / despertar-01
+                                :ARG0 (v / veu
+				      :mod (p / petita)
+                                      :mod (e / especial
+                                      	   :degree (m / molt)))))
+                                :ARG1 j)
+	   :mode imperative)))
+
 
 46. Deia : - Si us plau ... dibuixa'm un be ! (lpp_1943.46)
 
 (d / dir-01
-	:ARG0 (e / ell)
-	:ARG1 (d / dibuixar-01 :mode imperative :polite +
+	:ARG0 (v / veu)
+	:ARG1 (d2 / dibuixar-01 :mode imperative :polite +
 	      :ARG0 (t / tú)
 	      :ARG1 (b / be)
-	      :ARG2 (e2 / jo)
+	      :ARG2 (j / jo)
 		
 
 47. Eh ! ? (lpp_1943.47)
@@ -547,18 +558,20 @@ tan assenyat . (lpp_1943.38)
 
 (p / posar-01
 	:ARG0 (j / jo)
-	:ARG1 (d / dret)
-	:manner (b / bot
-		:quant 1))
+	:ARG1 j
+	:ARG2 (d / dret)
+	:manner (s / saltar-01
+		:ARG0 j)
 	:conj-as-if (c / caure-01
-		:ARG0 (l / llamp)
-		:ARG1 j))
+		    :ARG1 (ll / llamp)
+		    :ARG4 j))
 	        
 50. Vaig fregar-me bé els ulls . (lpp_1943.50)
 
 (f / fregar-se-01
 	:ARG0 (j / jo)
-	:ARG1 (u / ull)
+	:ARG1 (u / ull
+	      :part-of j)
 	:degree (b / bé))
 
 
@@ -571,11 +584,14 @@ tan assenyat . (lpp_1943.38)
 
 52. I vaig veure un jovenet realment extraordinari que m'observava amb aire greu . (lpp_1943.52)
 
-(v / veure-01
-	:ARG0 (j / jo)
-	:ARG1 (j2 / jovenet
-	      :mod (e / extraordinari))
-	      :ARG0-of (o / observar-01
-		       :ARG1 j
-		       :manner (a / aire
-			       :mod (g / greu))))
+(i / i
+     :op2 (v / veure-01
+	  :ARG0 (j / jo)
+	  :ARG1 (j2 / jove
+		:mod (p / petit)
+	        :mod (e / extraordinari
+		     :degree (r / realment))
+	        :ARG0-of (o / observar-01
+		         :ARG1 j
+		         :manner (a / aire
+			         :mod (g / greu)))))
