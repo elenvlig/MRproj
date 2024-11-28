@@ -1,0 +1,20 @@
+1.
+
+(c / chapter
+     :mod 1)
+
+2. 
+
+(v / see-01
+	:ARG0 (j / I)
+	:ARG1 (d / drawing
+	      :mod (m / magnificent)
+	      :location (l / book :wiki - 
+		    :name (n / nom :op1 "Stories" :op2 "Lived"
+		    :topic (s / jungle
+			  :mod (v2 / virgin))))
+	:mod (q / when)
+	:time (a / age-o1
+	      :ARG0 j
+	      :ARG1 (t / temporal-quantity :quant 6
+		    :unit (a / year))))
