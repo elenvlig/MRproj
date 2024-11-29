@@ -312,7 +312,7 @@ Annotations- March 21,2023
       :ARG1 (κ / κάτι)
           :domain (α / αυτό)
       :degree (π / πολύ)
-      :condition (τ / τυχαίνω-03
+      :condition (τ / τυχαίνω-02
             :ARG1 (χ / χάνω-03)
                    :ARG0 (ε / εσύ)
                    :ARG1 (δ / δρόμος
@@ -320,6 +320,7 @@ Annotations- March 21,2023
                    :mod (ι / ιδιαίτερα)
                    :mod (μ / μάλιστα)
                    :time (d / date-entity :dayperiod (ν / νύχτα)))
+
 
 28. Έτσι, στη ζωή μου, γνωρίστηκα με χίλιους δυο ανθρώπους σοβαρούς . (lpp_1943.28)
 
@@ -415,7 +416,7 @@ Annotations- March 21,2023
            :ARG0 (ε / εγώ)
            :ARG1 (ο / ούτε
                   :op1 (β / βόας)
-                  :op2 (f / forest
+                  :op2 (δ / δάσος
                          :mod (π / παρθένος))
                   :op3 (α / αστέρι))
            :ARG2 (κ / κάποιος)
@@ -446,7 +447,7 @@ Annotations- March 21,2023
 
 (κ / και
       :op2 (ε / ευχαριστιέμαι-01
-            :ARG0 (γ / γνωρίζω
+            :ARG0 (γ / γνωρίζω-02
                   :ARG0 μ
                   :ARG1 (α / άνθρωπος
                     :ARG1-of (r / resemble-01
@@ -566,7 +567,8 @@ Annotations- March 21,2023
 
 (ζ / ζωγραφίζω-01 :mode imperative :polite +
             :ARG0 (ε / εσείς)
-            :ARG1 (α / αρνί)
+            :ARG1 (α / αρνί
+                    :mod(μ / μικρός))
             :ARG2 (ε2 / εγώ))
 
 47. Ε !  (lpp_1943.47)
@@ -578,7 +580,8 @@ Annotations- March 21,2023
 
 (ζ / ζωγραφίζω-01 :mode imperative
   :ARG0 (ε / εσείς)
-  :ARG1 (α / αρνί)
+  :ARG1 (α / αρνί
+         :mod(μ / μικρός))
   :ARG2 (ε / εγώ))
 
 
