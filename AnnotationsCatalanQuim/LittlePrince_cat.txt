@@ -25,7 +25,7 @@ AMRs (Abstract Meaning Representations) for 52 sentences of Le Petit Prince, a 1
 3. Representava una boa empassant-se una fera . (lpp_1943.3)
 
 (r / representar-01
-	:ARG0 (d / dibuix
+	:ARG0 (d / dibuix)
 	:ARG1 (b / boa
            :ARG0-of (e / empassar-se-01
                       	:ARG1 (f / fera))))
@@ -35,7 +35,7 @@ AMRs (Abstract Meaning Representations) for 52 sentences of Le Petit Prince, a 1
 (b / be-located-at-91
       :ARG1 (t / thing
             :ARG2-of (c / copiar-01
-                  :ARG1 (d / dibuix
+                  :ARG1 (d / dibuix)))
       :ARG2 (a / aquí))
 
 
@@ -73,7 +73,7 @@ AMRs (Abstract Meaning Representations) for 52 sentences of Le Petit Prince, a 1
       :ARG0 (jo / j)
       :ARG1 (a / aventura
             :location (s / selva))
-      :manner (m / molt
+      :manner (m / molt)
       :time (a2 / aleshores))
 
 
@@ -165,8 +165,8 @@ AMRs (Abstract Meaning Representations) for 52 sentences of Le Petit Prince, a 1
 
 (n / necessitar-01
 	:ARG0 (p / persona
-	       :mod(g / gran))
-	:ARG1 (e2 / explicació)
+	       :mod (g / gran))
+	:ARG1 (e / explicació)
 	:time (s / sempre))
 
 
@@ -414,7 +414,7 @@ AMRs (Abstract Meaning Representations) for 52 sentences of Le Petit Prince, a 1
 
 (p / parlar-01
 	:ARG0 (j / jo)
-	:ARG1 (a / and
+	:ARG1 (i / i
 	      :op1 (b / bridge)
 	      :op2 (g / golf)
 	      :op3 (p3 / política)
@@ -469,7 +469,6 @@ tan assenyat . (lpp_1943.38)
 	:ARG1 (c / cosa
 	      :part-of (m / motor)))
 
-
 42. I com que no anava amb cap mecànic ni amb cap passatger , em vaig preparar per mirar de fer , tot sol , una reparació difícil . (lpp_1943.42)
 
 (i / i
@@ -489,7 +488,6 @@ tan assenyat . (lpp_1943.38)
 				:mod (d / difícil)))
                 	:mod (s / sol
                         	:degree (t / tot))))))
-
 
 
 43. La primera nit , doncs , em vaig adormir a la sorra a mil milles de cap terra habitada . (lpp_1943.43)
@@ -548,7 +546,6 @@ tan assenyat . (lpp_1943.38)
 	      :ARG1 (b / be)
 	      :ARG2 (j / jo)))
 		
-
 47. Eh ! ? (lpp_1943.47)
 
 (s / string-entity :value "eh")

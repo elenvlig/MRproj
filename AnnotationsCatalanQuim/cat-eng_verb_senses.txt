@@ -1,8 +1,8 @@
 1. - 
 2. veure (see) | dir-se ( )
 3. representar (represent) | empassar-se (swallow)
-4. tenir (have) | copiar (copy)
-5. empassar-se (swallow) | mastegar (chew)
+4. tenir (have|be-located-at) | copiar (copy)
+5. dir (say) |empassar-se (swallow) | mastegar (chew)
 6. moure (move) | dormir (sleep) | digerir (digest)
 7. rumiar (refect)
 8. fer (make)
@@ -24,7 +24,7 @@
 24. volar (fly)
 25. servir (useful)
 26. saber (know) | distingir (distinguish)
-27. perdre (lost)
+27. perdre (lose)
 28. contactar (contact)
 29. viure (live)
 30. veure (see)
@@ -37,7 +37,7 @@
 37. parlar (talk)
 38. content (happy) | conèixer (meet)
 39. - 
-40. viure (live) | tenir (have)
+40. viure (live) | tenir (have) | parlar (talk)
 41. trencar (break)
 42. anar (go) | preparar (prepare) | intentar (attempt) | reparar (repair)
 43. adormir-se (sleep) | habitar (inhabit)
