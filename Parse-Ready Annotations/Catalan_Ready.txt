@@ -1,9 +1,7 @@
-1.
+
 
 (c / chapter
-     :mod 1)
-
-2. 
+     :mod 1) 
 
 (v / see-01
 	:ARG0 (j / I)
@@ -19,23 +17,17 @@
 	      :ARG1 (t / temporal-quantity :quant 6
 		    :unit (a / year))))
 
-3. 
-
 (r / represent-01
 	:ARG0 (d / drawing)
 	:ARG1 (b / boa
            :ARG0-of (e / swallow-01
                       	:ARG1 (f / beast))))
 
-4.
-
 (b / be-located-at-91
       :ARG1 (t / thing
             :ARG2-of (c / copy-01
                   :ARG1 (d / drawing)))
       :ARG2 (a / here))
-
-5.
 
 (d / say-01
       :ARG0 (l / book)
@@ -47,8 +39,6 @@
             :manner (m / chew-01 :polarity -
                   :ARG0 b
                   :ARG1 p)))
-
-6.
 
 (i / and
       :op1 (p / possible-01 :polarity -
@@ -62,17 +52,12 @@
                   :duration-of (d2 / digest-01
                      		:ARG0 b)))
 
-7.
-
 (r / reflect-02
       :ARG0 (j / I)
       :ARG1 (a / adventure
             :location (s / jungle))
       :manner (m / much)
       :time (a2 / then))
-
-
-8.
 
 (i / and
       :op2 (f / make-01
@@ -84,18 +69,12 @@
             :manner (b / side
                   :poss j)))
 
-9.
-
 (d / drawing 
       :mod 1
       :poss (j / I))
 
-10.
-
 (d / drawing
       :mod (a / so))
-
-11.
 
 (i / and
 	:op1 (e / show-01
@@ -111,34 +90,24 @@
 		      :ARG1 p)		            
 	     :ARG2 p))
 
-12.
-
 (r / answer-01
      :ARG0 (p / person
 	   :mod (g / adult)))
-
-13.
 
 (f / frighten-01
      :ARG0 (b / hat)
      :ARG1-of (c / cause-01
               :ARG0 (a2 / amr-unknown)))
 
-14.
-
 (r / represent-01 :polarity -
 	:ARG0 (d / drawing
 	      :poss (j / I))
 	:ARG1 (b / hat))
 
-15.
-
 (r / represent-01
 	:ARG0 (b / boa
 	      :ARG1-of (d / digest-01
 		       :ARG2 (e / elephant))))
-
-16.
 
 (d / draw-01
 	:ARG0 (j / I)
@@ -150,22 +119,16 @@
 			      :mod (g / adult))
 		        :ARG1 (h / it)))
 
-17.
-
 (n / need-01
 	:ARG0 (p / person
 	       :mod (g / adult))
 	:ARG1 (e / explanation)
 	:time (s / always))
 
-18.
-
 (d / drawing
 	:mod 2
 	:mod (a / so)
 	:poss (j / I))
-
-19.
 
 (i / and
    :op1 (a / recommend-01
@@ -189,8 +152,6 @@
 		    :op3 (c / calculus)
 		    :op4 (g2 / grammar)))))
 
-20.
-
 (c / cause-01
      :ARG0 (a / so)
      :ARG1 (a2 / give_up-07
@@ -202,8 +163,6 @@
 	   :mod (t / temporal-quantity :quant 6
 		:unit (a3 / year))))
 
-21.
-
 (d / dishearten-01 
 	:ARG0 (f / fail-01
 		 :ARG1 (i / and
@@ -214,8 +173,6 @@
 			    :mod (n2 / number
 				 :mod 2)))))
 	:ARG1 (j / I))
-
-22.
 
 (i / and
       :op1 (e / understand-01 :polarity -
@@ -234,8 +191,6 @@
                   :ARG2 p2
                   :time (s / always))))
 
-23.
-
 (c / cause-01
    :ARG1 (i / and
           :op1 (o / obligate-01
@@ -249,23 +204,17 @@
                          :ARG0 j
                          :ARG1 (a3 / airplane)))))
 
-24.
-
 (v / fly-01
 	:ARG0 (j / I)
 	:location (m / world
 	      :mod (t / all))
 	:degree (m2 / bit))
 
-25.
-
 (s / useful-05
      :ARG1-of (t / true-01)
      :ARG0 (j / I)
      :ARG1 (g / geography)
      :degree (m / much))
-
-26.
 
 (s / know-01
 	:ARG0 (j / I)
@@ -277,8 +226,6 @@
                   :name (n2 / name :op1 "Arizona"))
 		:manner (a2/ at-first-glance)))
 
-27.
-
 (u / useful
 	:domain (a / this)
 	:condition (p / lose-01
@@ -286,8 +233,6 @@
 		   :ARG1 t
 		   :duration (t2 / temporal-quantity
 			     :unit (n / night))))
-
-28.
 
 (c / contact-01
 	:ARG0 (j / I)
@@ -300,16 +245,12 @@
 	:manner (m / way
 		:mod (a / this)))
 
-29.
-
 (v / live-01
 	:ARG0 (j / I)
 	:degree (m / very)
 	:location (e / among
 		  :op1 (p / person
 		       :mod (g / adult))))
-
-30.
 
 (v / see-01
 	:ARG0 (j / I)
@@ -318,15 +259,11 @@
 	:manner (p / close
 		:degree (m / very))
 
-31.
-
 (m / improve-01 :polarity -
 	:ARG0 (a / this)
 	:ARG1 (o / opinion
 	      :poss (j / I))
 	:degree (g / hardly))
-
-32.
 
 (f / do-02
      :ARG0 (j / I)
@@ -345,8 +282,6 @@
 	   		  :mod (l / lucid
 			       :degree (m / slightly)))))
 
-33.
-
 (s / know-01
 	:ARG0 (j / I)
 	:ARG1-of (v / want-01
@@ -354,16 +289,12 @@
 	:ARG1 (c / understand-01 :mode interrogative
 	      :ARG0 (p / person)))
 
-34.
-
 (c / contrast-01
      :ARG2 (r / answer-01
 	   :ARG0 (p / person)
 	   :ARG1 (b / hat
 	         :domain (a / this))
 	   :time (s / always)))
-
-35.
 
 (p / talk-01
 	:ARG0 (j / I)
@@ -376,15 +307,11 @@
 	:time (a / then)
 	:polarity -)
 
-36.
-
 (p / put-01
 	:ARG0 (j / I)
 	:ARG1 j
 	:ARG2 (n / level
 	      :poss (p2 / person)))
-
-37.
 
 (p / talk-01
 	:ARG0 (j / I)
@@ -394,8 +321,6 @@
 	      :op3 (p3 / politics)
 	      :op4 (c / tie))
 	:ARG2 (p2 / person))
-
-38.
 
 (i / and
    :op2 (c / happy-01
@@ -408,12 +333,8 @@
 		  :mod (g / adult))
 	    :degree (b / really)))
 
-39.
-
 (c / chapter
      :mod 2)
-
-40.
 
 (c / cause-01
       :ARG1 (v / live-01
@@ -432,13 +353,9 @@
                                  :quant (t2 / temporal-quantity :quant 6
                                         :unit (a4 / year)))))))
 
-41.
-
 (t / break-01
 	:ARG1 (c / something
 	      :part-of (m / engine)))
-
-42.
 
 (i / and
     :op2 (c / cause-01
@@ -458,8 +375,6 @@
                 	:mod (s / alone
                         	:degree (t / completely)))))) 
 
-43.
-
 (a / sleep-01
 	:ARG0 (j / I)
 	:location (s / sand)
@@ -473,8 +388,6 @@
 		:quant (d2 / distance-quantity :quant 1000
 			:unit (m / mile))))
 
-44.
-
 (a / isolate-01
      :ARG1 (j / I)
      :degree (m / more
@@ -484,8 +397,6 @@
 		  :location (r / boat
 			    :location (o / ocean
 				:part (m3 / middle)))))
-
-45.
 
 (c / cause-01
      :ARG1 (i / imagine-01
@@ -502,8 +413,6 @@
                                 :ARG1 j)))
 	   :mode imperative)))
 
-46.
-
 (d / say-01
 	:ARG0 (v / voice)
 	:ARG1 (d2 / draw-01 :mode imperative :polite +
@@ -511,19 +420,13 @@
 	      :ARG1 (b / lamb)
 	      :ARG2 (j / I)))
 
-47.
-
 (s / string-entity :value "eh")
-
-48.
 
 (d / draw-01
 	:ARG0 (t / you)
 	:ARG1 (b / lamb)
 	:ARG2 (j / I)
 	:mode imperative)
-
-49.
 
 (p / put-01
 	:ARG0 (j / I)
@@ -535,21 +438,15 @@
 		    :ARG1 (l / lightning)
 		    :ARG4 j))
 
-50.
-
 (f / rub-01
 	:ARG0 (j / I)
 	:ARG1 (u / eye
 	      :part-of j)
 	:degree (b / well))
 
-51.
-
 (m / look-01
 	:ARG0 (j / I)
 	:manner (b / well))
-
-52.
 
 (i / and
      :op2 (v / see-01
@@ -561,4 +458,4 @@
 	        :ARG0-of (o / observe-01
 		         :ARG1 j
 		         :manner (a / way
-			         :mod (g / worried)))))) 
+			         :mod (g / worried))))))
