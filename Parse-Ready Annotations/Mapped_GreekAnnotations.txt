@@ -1,11 +1,8 @@
 
-1.
-
-CHAPTER ONE. (c / chapter
+(c / chapter
   :ord (o / ordinal-entity 
            :value 1))
 
-2. 
 (s / see-01
       :ARG0 (i / I)
       :ARG1 (d / drawing
@@ -20,22 +17,19 @@ CHAPTER ONE. (c / chapter
             :ARG1 (t / temporal-quantity :quant 6
                   :unit (y / year))))
 
-3.
 (s / depict-01         
   :ARG0 (d / drawing
   :ARG1 (s2 / snake
         :mod (h / huge)
         :mod (b / boa)
         :ARG0-of (s3 / devour-01
-                    :ARG1 (w / wild-animal))))
+                    :ARG1 (w / wild-animal)))))
 
-4.
 (s / show-01
     :ARG1 (c / copy
             :mod (d / drawing
                   :mod (t / that))))
 
-5. 
 (w / write-01
       :ARG0 (b2 / book)
       :ARG1 (s / swallow-01
@@ -47,7 +41,6 @@ CHAPTER ONE. (c / chapter
                   :ARG0 b
                   :ARG1 p)))
 
-6.
 (c / cause-01
   :ARG0 (p / possible-01 :polarity -
           :ARG1 (m / move-01 
@@ -61,18 +54,12 @@ CHAPTER ONE. (c / chapter
                   :op1 (d / digest-01)
                         :ARG0 b)))
 
-
-
-7.
 (t / ponder-01
    :ARG0 (i / I)
    :ARG1 (a / adventure
            :location (j / jungle))
    :time (t2 / then)
-   :degree (a / a lot))
-
-
-8.
+   :degree (v / very))
 
 (a / and
       :op2 (s / succeed-01
@@ -86,13 +73,8 @@ CHAPTER ONE. (c / chapter
                          :mod (c2 / color))
             :mod (o2 / one)))
 
-
-9.
-
 (d / drawing :wiki -
       :name (n2 / name :op1 "Drawing" :op2 "Νumber" :op3 "1"))
-
-10. 
 
 (l / resemble-01
     :ARG1 (d / drawing)
@@ -114,15 +96,9 @@ CHAPTER ONE. (c / chapter
                   :ARG1 g)
             :ARG2 g))
 
-
-12.
-
 (a / answer-01
     :ARG0 (h / he)
     :ARG1 (i / I))
-
-
-13.
 
 (f / frighten-01
   :ARG0 (h / hat)
@@ -131,22 +107,16 @@ CHAPTER ONE. (c / chapter
              :ARG0 (a2 / amr-unknown)))
 
 
-14.
 (d / depict-01 :polarity -
       :ARG0 (d / drawing
              :poss (i / I))
       :ARG1 (h / hat))
-
-15.
 
 (s / depict-01
   :ARG0 (d / drawing)
   :ARG1 (b / boa)
           :ARG0-of (d / digest-01
                      :ARG1 (e / elephant)))
-
-
-16.
 
 (c2 / cause-01
      :ARG1 (d / draw-01
@@ -158,7 +128,6 @@ CHAPTER ONE. (c / chapter
                         :ARG1 (u / understand-01
                               :ARG0 g)))
 
-17.
 (n / need-01
       :ARG0 (b / big)
       :ARG1 (e / explanations)
@@ -166,15 +135,11 @@ CHAPTER ONE. (c / chapter
       :purpose (u / understand-01
                  :ARG0 b))
 
-18.
 (l / resemble-01
     :ARG1 (d / drawing :wiki -
         :name (n / name :op1 "Drawing" :op2 "Number" :op3 "Two"))
     :ARG2 (t / like-this
         :manner (s / somehow)))
-
-
-19.
 
 (a / advise-01
     :ARG0 (g / grown-ups)
@@ -197,9 +162,6 @@ CHAPTER ONE. (c / chapter
             :manner (g / g
                 :degree (m / more))))
 
-
-20.
-
 (c2 / cause-01
       :ARG1 (g / give_up-07
             :ARG0 (i / I)
@@ -212,8 +174,6 @@ CHAPTER ONE. (c / chapter
                   :ARG2 (t / temporal-quantity :quant 6
                         :unit (y / year))))
 
-21.
-
 (d / disappoint-01
       :ARG0 (f / fail-01
             :ARG1 (a / and
@@ -223,9 +183,6 @@ CHAPTER ONE. (c / chapter
                         :name (n2 / name :op1 "Drawing" :op2 "Number" :op3 "Two"))
                   :poss (i / I)))
       :ARG1 i)
-
-
-22.
 
 (a / and
       :op1 (u / understand-01 :polarity -
@@ -238,9 +195,6 @@ CHAPTER ONE. (c / chapter
                   :ARG0 (c / child)
                   :ARG2 b
                   :mod (e3 / every-time))))
-
-
-23.
 
 (c2 / cause-01
   :ARG1 (a / and
@@ -256,7 +210,6 @@ CHAPTER ONE. (c / chapter
                          :ARG0 i
                          :ARG1 (a2 / airplane)
                  :manner (s / so)))))
-24.
 
 (f / fly-01
      :ARG0 (i / I)
@@ -265,17 +218,11 @@ CHAPTER ONE. (c / chapter
                  	    :mod (a / all)))
      :extent (m / more-or-less))
 
-
-
-25.
-
 (a / and
     :op1 (u / useful-05
            :ARG0 (g / geography)
            :ARG1 (i / I)
            :degree (v / very)))
-
-26.
 
 (p / possible-01
       :ARG1 (r / recognize-01
@@ -287,9 +234,6 @@ CHAPTER ONE. (c / chapter
             :manner (g / glance
                     :ord (o / ordinal-entity 
                            :value 1))))
-
-
-27.
 
 (u / useful-05
       :ARG1 (s / something)
@@ -304,9 +248,6 @@ CHAPTER ONE. (c / chapter
                    :mod (i / indeed)
                    :time (d / date-entity :dayperiod (n / night))))
 
-28.
-
-
 (c / cause-01
   :ARG1 (k / meet-01
        :ARG0 (i / I)
@@ -316,14 +257,10 @@ CHAPTER ONE. (c / chapter
        :time (l / life
                :poss i))))
 
-29.
-
 (s / spend-02
    :ARG0 (i / I)
    :ARG1 (y / years-and-years)
    :accompanier (g / grown-up))
-
-30.
 
 (l / live-01
      :ARG0 (i / I)
@@ -331,10 +268,6 @@ CHAPTER ONE. (c / chapter
      :ARG1-of (c / close-10
                  :degree (v / very))
      :mod (i2 / indeed))
-
-
-
-31.
 
 (a / and
       :op2 (c / contrast-01
@@ -346,8 +279,6 @@ CHAPTER ONE. (c / chapter
                               :topic (s / self
                                     :poss (t3 / them))))
                   :degree (m / much))))
-
-32.
 
 (e / experiment-01
    :ARG0 (i / I)
@@ -365,8 +296,6 @@ CHAPTER ONE. (c / chapter
                                :ARG1 s
                                :mod (s3 / sharp))))
 
-33.
-
 (w / want-01
       :ARG0 (i / I)
       :ARG1 (k / know-01
@@ -375,16 +304,12 @@ CHAPTER ONE. (c / chapter
                   :ARG0 (s / someone))
             :ARG1-of (t / true-01)))
 
-34.
-
 (c / contrast-01
   :ARG2 (r / reply-01
           :ARG0 (h / he)
           :ARG2 (c / hat)
                  :mod (o / one)
           :time (a2 / always)))
-
-35.
 
 (a / and
       :op2 (s / talk-01 :polarity -
@@ -397,16 +322,12 @@ CHAPTER ONE. (c / chapter
            :ARG2 (s2 / someone)
            :time (n / never)))
 
-36.
-
 (a / agree-01
    :ARG0 (i / I)
    :ARG2 (s / someone))
    :duration-of (b / become-01
             :ARG0 i
             :ARG2 s))
-
-37.
 
 (t / talk-01
    :ARG0 (i / I)
@@ -416,9 +337,6 @@ CHAPTER ONE. (c / chapter
           :op3 (p / politics)
           :op4 (t / tie))
    :ARG2 (s / someone))
-
-
-38.
 
 (a / and
     :op2 (p / please-01
@@ -431,15 +349,9 @@ CHAPTER ONE. (c / chapter
             :ARG1 (g / grown_up)
             :degree (p / very)))
 
-
-39.
-
 (c / chapter
    :ord (o / ordinal-entity 
            :value 2))
-
-
-40.
 
 (c / cause-01
       :ARG1 (l / live-01
@@ -458,13 +370,10 @@ CHAPTER ONE. (c / chapter
                               :quant (t / temporal-quantity :quant 6
                                     :unit (m / month)))))))
 
-41.
-
 (b / break-01
       :ARG1 (s / something
             :location (e / engine
                   :poss (I / I))))
-42.
 
 (a / and
   :op2 (c / cause-01
@@ -483,8 +392,6 @@ CHAPTER ONE. (c / chapter
                          :mod (a / alone)
                          :manner (c / completely)))))
 
-43.
-
 (c / cause-01
      :ARG1 (s / sleep-01
                :ARG0 (I / I)
@@ -499,7 +406,6 @@ CHAPTER ONE. (c / chapter
                      :quant (d / distance-quantity :quant 1000
                             :unit (m / mile))
                      :direction (f / far)))
-44.
 
 (a / isolate-01
       :ARG1 (I / I)
@@ -510,9 +416,6 @@ CHAPTER ONE. (c / chapter
                   :location (o / ocean
                         :mod (v / vast)
                         :part (m / middle)))))
-
-
-45.
 
 (c / cause-01
       :ARG1 (d / difficult
@@ -529,29 +432,19 @@ CHAPTER ONE. (c / chapter
                            :ARG0-of (t / say-01 
                                       :ARG0 v)))))
 
-46.
-
 (d / draw-01 :mode imperative :polite +
             :ARG0 (y / you)
             :ARG1 (l / lamb
                    :mod ( l / little))
             :ARG2 (i / I))
 
-47.
-
 (s / string-entity :value "Ε")
 
-
-48.
-
-(z / draw-01 :mode imperative
+(d / draw-01 :mode imperative
   :ARG0 (y / you)
   :ARG1 (l / lamb
          :mod (l / little))
   :ARG2 (i / I))
-
-
-49.
 
 (f / flinch-01
       :ARG0 (i / I)
@@ -560,8 +453,6 @@ CHAPTER ONE. (c / chapter
             :ARG2 (s / strike-01
                   :ARG1 i
                   :ARG2 (l / lightning))))
-
-50.
 
 (a / and
       :op1 (r / rub-01
@@ -572,8 +463,6 @@ CHAPTER ONE. (c / chapter
                 :part-of i)     
             :mod (a / again)))
 
-51.
-
 (a / and
       :op1 (l / look-01
             :ARG0 (i / I))       
@@ -582,10 +471,7 @@ CHAPTER ONE. (c / chapter
             :mod (a / again)
             :manner (p / persistently)))
 
-
-52.
-
-(k / and
+(a / and
       :op2 (s / see-01
             :ARG0 (i / I)
             :ARG1 (p / person
@@ -595,4 +481,3 @@ CHAPTER ONE. (c / chapter
                   :ARG0-of (o / observe-01
                         :ARG1 i
                         :manner (c / carefully))))
-
