@@ -17,3 +17,6 @@ def validate_amr_file(file_path):
         except Exception as e:
             print(f"AMR #{idx} is invalid!")
             print(f"Error: {e}\n")
+            
+# Call the function with your file
+validate_amr_file("Mapped_GreekAnnotations.txt")
