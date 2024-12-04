@@ -160,7 +160,7 @@
                 :op3 (a / arithmetic)
                 :op4 (g2 / grammar))
             :manner (g / g
-                :degree (m / more))))
+                :degree (m / more)))))
 
 (c2 / cause-01
       :ARG1 (g / give_up-07
@@ -172,7 +172,7 @@
             :time (a2 / age-01
                   :ARG0 i
                   :ARG2 (t / temporal-quantity :quant 6
-                        :unit (y / year))))
+                        :unit (y / year)))))
 
 (d / disappoint-01
       :ARG0 (f / fail-01
@@ -347,7 +347,7 @@
                                       :ARG1 p
                                       :ARG2 g)))
             :ARG1 (g / grown_up)
-            :degree (p / very)))
+            :degree (v / very)))
 
 (c / chapter
    :ord (o / ordinal-entity 
@@ -402,7 +402,7 @@
                :location (r / relative-position
                      :op1 (a / area
                            :ARG1-of (i / inhabit-01)
-                           :mod (e / every))
+                           :mod (e / every)))
                      :quant (d / distance-quantity :quant 1000
                             :unit (m / mile))
                      :direction (f / far)))
@@ -422,15 +422,15 @@
             :domain (i / imagine-01
                   :ARG0 (y / you)
                   :ARG1 (s / surprise
-                          :poss (i / I)
+                          :poss (i / I)))
                    :time (d / dawn
                           :time-of (w / wake-01
                                     :ARG0 (v / voice
                                           :mod (s / strange)
-                                          :mod (l / small))
-                                    :ARG1 i)
+                                          :mod (l / small)))
+                                    :ARG1 i))
                            :ARG0-of (t / say-01 
-                                      :ARG0 v)))))
+                                      :ARG0 v)))
 
 (d / draw-01 :mode imperative :polite +
             :ARG0 (y / you)
@@ -477,7 +477,7 @@
             :ARG1 (p / person
                   :mod (m / microscopic)
                   :mod (s / strange
-                        :degree (v / very))
+                        :degree (v / very)))
                   :ARG0-of (o / observe-01
                         :ARG1 i
                         :manner (c / carefully))))
