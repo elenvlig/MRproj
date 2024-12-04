@@ -2,7 +2,7 @@ import penman
 
 def validate_amr_file(file_path):
     
-    with open('Mapped_EnglishAnnotations.txt', 'r', encoding='utf-8') as file:
+    with open('Mapped_CatalanAnnotations.txt', 'r', encoding='utf-8') as file:
         # Split annotations by double newline
         annotations = file.read().strip().split("\n\n")
 
@@ -19,4 +19,4 @@ def validate_amr_file(file_path):
             print(f"Error: {e}\n")
             
 # Call the function with your file
-validate_amr_file("Mapped_GreekAnnotations.txt")
+validate_amr_file("Mapped_CatalanAnnotations.txt")
