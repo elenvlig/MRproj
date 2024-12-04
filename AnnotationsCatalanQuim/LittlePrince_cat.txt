@@ -16,9 +16,9 @@ AMRs (Abstract Meaning Representations) for 52 sentences of Le Petit Prince, a 1
 		    :topic (s / selva
 			  :mod (v2 / verge))))
 	:mod (q / quan)
-	:time (a / age-o1
-	      :ARG0 j
-	      :ARG1 (t / temporal-quantity :quant 6
+	:time (a / age-01
+	      :ARG1 j
+	      :ARG2 (t / temporal-quantity :quant 6
 		    :unit (a / any))))
 
 
