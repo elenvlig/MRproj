@@ -1,0 +1,480 @@
+
+(c / chapter
+  :ord (o / ordinal-entity 
+           :value 1))
+
+(s / see-01
+      :ARG0 (i / I)
+      :ARG1 (d / drawing
+            :mod (w / wonderful)
+            :location (b / book :wiki -
+                  :name (n / name :op1 "True" :op2 "Stories")
+                  :topic (f / forest
+                        :mod (w2 / wild))))
+      :mod (s2 / still)
+      :time (a / age-01
+            :ARG0 i
+            :ARG1 (t / temporal-quantity :quant 6
+                  :unit (y / year))))
+
+(s / depict-01         
+  :ARG0 (d / drawing
+  :ARG1 (s2 / snake
+        :mod (h / huge)
+        :mod (b / boa)
+        :ARG0-of (s3 / devour-01
+                    :ARG1 (w / wild-animal)))))
+
+(s / show-01
+    :ARG1 (c / copy
+            :mod (d / drawing
+                  :mod (t / that))))
+
+(w / write-01
+      :ARG0 (b2 / book)
+      :ARG1 (s / swallow-01
+            :ARG0 (b / boa)
+            :ARG1 (p / prey
+                  :mod (w / whole)
+                  :poss b)
+            :manner (c / chew-01 :polarity -
+                  :ARG0 b
+                  :ARG1 p)))
+
+(c / cause-01
+  :ARG0 (p / possible-01 :polarity -
+          :ARG1 (m / move-01 
+                  :ARG0 (b / boa)
+                  :time (l / later)))
+  :ARG1 (s / sleep-01
+         :ARG0 b
+         :duration (t2 / temporal-quantity :quant 6
+                   :unit (m2 / month)))
+          :time (u / until 
+                  :op1 (d / digest-01)
+                        :ARG0 b)))
+
+(t / ponder-01
+   :ARG0 (i / I)
+   :ARG1 (a / adventure
+           :location (j / jungle))
+   :time (t2 / then)
+   :degree (v / very))
+
+(a / and
+      :op2 (s / succeed-01
+            :ARG0 (i / I)
+            :ARG1 (c / make_up-01
+                  :ARG0 i
+                  :ARG1 (d / drawing
+                         :poss i
+                         :ord (o / ordinal-entity :value 1)))
+            :instrument (p / pencil
+                         :mod (c2 / color))
+            :mod (o2 / one)))
+
+(d / drawing :wiki -
+      :name (n2 / name :op1 "Drawing" :op2 "Νumber" :op3 "1"))
+
+(l / resemble-01
+    :ARG1 (d / drawing)
+    :ARG2 (t / like-this
+        :manner (s / somehow)))
+
+(a / and
+      :op1 (s / show-01
+            :ARG0 (i / I)
+            :ARG1 (m / masterpiece
+                  :poss i)
+            :ARG2 (g / grown-ups)
+            :mod (s / some))
+      :op2 (q / ask-01
+            :ARG0 i
+            :ARG1 (f / frighten-01 :mode interrogative
+                  :ARG0 m
+                  :ARG1 g)
+            :ARG2 g))
+
+(a / answer-01
+    :ARG0 (h / he)
+    :ARG1 (i / I))
+
+(f / frighten-01
+  :ARG0 (h / hat)
+  :ARG1 (i / I)        
+  :ARG1-of (c / cause-01
+             :ARG0 (a2 / amr-unknown)))
+
+(d / depict-01 :polarity -
+      :ARG0 (d / drawing
+             :poss (i / I))
+      :ARG1 (h / hat))
+
+(s / depict-01
+  :ARG0 (d / drawing)
+  :ARG1 (b / boa)
+          :ARG0-of (d / digest-01
+                     :ARG1 (e / elephant)))
+
+(c2 / cause-01
+     :ARG1 (d / draw-01
+           :ARG0 (i / I)
+           :ARG1 (i2 / inside
+                 :part-of (b / boa)))
+     :purpose (p / possible-01
+                        :ARG0 (g / big)
+                        :ARG1 (u / understand-01
+                              :ARG0 g)))
+
+(n / need-01
+      :ARG0 (b / big)
+      :ARG1 (e / explanations)
+      :time (a / always)
+      :purpose (u / understand-01
+                 :ARG0 b))
+
+(l / resemble-01
+    :ARG1 (d / drawing :wiki -
+        :name (n / name :op1 "Drawing" :op2 "Number" :op3 "Two"))
+    :ARG2 (t / like-this
+        :manner (s / somehow)))
+
+(a / advise-01
+    :ARG0 (g / grown-ups)
+    :ARG1 (i / I)
+    :ARG2 (a / and
+        :op1 (s / give_up-07
+            :ARG0 i
+            :ARG1 (d / drawing
+                :topic (b / boa
+                    :mod (t / or
+                        :op1 (o / open)
+                        :op2 (c / closed)))))
+        :op2 (e / engage-01
+            :ARG0 i
+            :ARG2 (g / and
+                :op1 (geography)
+                :op2 (h / history)
+                :op3 (a / arithmetic)
+                :op4 (g2 / grammar))
+            :manner (g / g
+                :degree (m / more)))))
+
+(c2 / cause-01
+      :ARG1 (g / give_up-07
+            :ARG0 (i / I)
+            :ARG1 (c / career
+                  :mod (b / brilliant)
+                  :topic (p / person
+                        :ARG0-of (d / draw-02)))
+            :time (a2 / age-01
+                  :ARG0 i
+                  :ARG2 (t / temporal-quantity :quant 6
+                        :unit (y / year)))))
+
+(d / disappoint-01
+      :ARG0 (f / fail-01
+            :ARG1 (a / and
+                  :op1 (d1 / drawing :wiki -
+                        :name (n / name :op1 "Drawing" :op2 "Number" :op3 "One"))
+                  :op2 (d2 / drawing :wiki -
+                        :name (n2 / name :op1 "Drawing" :op2 "Number" :op3 "Two"))
+                  :poss (i / I)))
+      :ARG1 i)
+
+(a / and
+      :op1 (u / understand-01 :polarity -
+            :ARG0 (g / grown-up)
+            :ARG1 (a / anything)
+            :time (n2 / never)
+            :mod (o / on-their-own))
+      :op2 (t / tiresome
+            :domain (e2 / explain-01
+                  :ARG0 (c / child)
+                  :ARG2 b
+                  :mod (e3 / every-time))))
+
+(c2 / cause-01
+  :ARG1 (a / and
+          :op1 (f / force-01
+                   :ARG0 (i / I)
+                   :ARG2 (c / choose-01
+                           :ARG0 i
+                           :ARG1 (p / profession
+                    	           :mod (a / another))))
+          :op2 (l / learn-01
+                 :ARG0 i
+                 :ARG1 (f2 / fly-01
+                         :ARG0 i
+                         :ARG1 (a2 / airplane)
+                 :manner (s / so)))))
+
+(f / fly-01
+     :ARG0 (i / I)
+     :location (e / everywhere
+                 :part-of (w / world
+                 	    :mod (a / all)))
+     :extent (m / more-or-less))
+
+(a / and
+    :op1 (u / useful-05
+           :ARG0 (g / geography)
+           :ARG1 (i / I)
+           :degree (v / very)))
+
+(p / possible-01
+      :ARG1 (r / recognize-01
+            :ARG0 (i / I)
+            :ARG1 (c / country :wiki "China"
+                  :name (n / name :op1 "China"))
+            :ARG2 (s / state :wiki "Arizona"
+                  :name (n2 / name :op1 "Arizona"))
+            :manner (g / glance
+                    :ord (o / ordinal-entity 
+                           :value 1))))
+
+(u / useful-05
+      :ARG1 (s / something)
+          :domain (t / this)
+      :degree (v / very)
+      :condition (h / happen-02
+            :ARG1 (l / lose-02)
+                   :ARG0 (y / you)
+                   :ARG1 (p / path
+                         :poss y))
+                   :mod (e / especially)
+                   :mod (i / indeed)
+                   :time (d / date-entity :dayperiod (n / night))))
+
+(c / cause-01
+  :ARG1 (k / meet-01
+       :ARG0 (i / I)
+       :ARG1 (p / person
+          :quant (m / countless)
+          :mod (s / serious))   
+       :time (l / life
+               :poss i))))
+
+(s / spend-02
+   :ARG0 (i / I)
+   :ARG1 (y / years-and-years)
+   :accompanier (g / grown-up))
+
+(l / live-01
+     :ARG0 (i / I)
+     :ARG1 (g / grown-up)
+     :ARG1-of (c / close-10
+                 :degree (v / very))
+     :mod (i2 / indeed))
+
+(a / and
+      :op2 (c / contrast-01
+            :ARG2 (i / improve-01 :polarity -
+                  :ARG0 (t / this)
+                  :ARG1 (t2 / thing
+                        :ARG1-of (o / opine-01
+                              :ARG0 (i2 / I)
+                              :topic (s / self
+                                    :poss (t3 / them))))
+                  :degree (m / much))))
+
+(e / experiment-01
+   :ARG0 (i / I)
+   :ARG1 (d / drawing :wiki - 
+          :name (n / name :op1 "Drawing" :op2 "Number" :op3 "One"))
+   :ARG1-of (h / have-03
+         :ARG0 i
+         :time (a / always)
+         :accompanier i)
+   :time (h2 / happen-02
+            :ARG1 (m / meet-01
+                    :ARG0 i
+                    :ARG1 (s / someone)) 
+                    :ARG1-of (s2 / seem-01
+                               :ARG1 s
+                               :mod (s3 / sharp))))
+
+(w / want-01
+      :ARG0 (i / I)
+      :ARG1 (k / know-01
+            :ARG0 i
+            :ARG1 (u / understand-01 :mode interrogative
+                  :ARG0 (s / someone))
+            :ARG1-of (t / true-01)))
+
+(c / contrast-01
+  :ARG2 (r / reply-01
+          :ARG0 (h / he)
+          :ARG2 (c / hat)
+                 :mod (o / one)
+          :time (a2 / always)))
+
+(a / and
+      :op2 (s / talk-01 :polarity -
+           :ARG0 (i / I)
+           :ARG1 (n / neither
+                  :op1 (b / boa)
+                  :op2 (f / forest
+                         :mod (v / virgin))
+                  :op3 (s / star))
+           :ARG2 (s2 / someone)
+           :time (n / never)))
+
+(a / agree-01
+   :ARG0 (i / I)
+   :ARG2 (s / someone))
+   :duration-of (b / become-01
+            :ARG0 i
+            :ARG2 s))
+
+(t / talk-01
+   :ARG0 (i / I)
+   :ARG1 (a / and
+          :op1 (b / bridge)
+          :op2 (g / golf)
+          :op3 (p / politics)
+          :op4 (t / tie))
+   :ARG2 (s / someone))
+
+(a / and
+    :op2 (p / please-01
+            :ARG0 (g / know-02
+                    :ARG0 g
+                    :ARG1 (p2 / person
+                            :ARG1-of (r / resemble-01
+                                      :ARG2 g)))
+            :ARG1 (g / grown_up)
+            :degree (v / very)))
+
+(c / chapter
+   :ord (o / ordinal-entity 
+           :value 2))
+
+(c / cause-01
+      :ARG1 (l / live-01
+            :ARG0 (I / I
+                  :ARG0-of (s / talk-01 :polarity -
+                        :ARG2 (n / nobody)
+                        :ARG1-of (r / real-04)))
+            :manner (a / alone)
+            :duration (u / until
+                  :op1 (h / have-06
+                        :ARG0 I
+                        :ARG1 (a2 / accident)
+                        :location (d / desert :wiki "Sahara" :name (n / name :op1 "Desert" :op2 "of" :op3 "Sahara"))
+                        :time (b / before
+                              :op1 (n / now)
+                              :quant (t / temporal-quantity :quant 6
+                                    :unit (m / month)))))))
+
+(b / break-01
+      :ARG1 (s / something
+            :location (e / engine
+                  :poss (I / I))))
+
+(a / and
+  :op2 (c / cause-01
+         :ARG0 (h / have-03 :polarity -
+                 :ARG0 i
+                 :ARG1 (n / neither
+                         :op1 (m / mechanic)
+                         :op2 (t / traveler))
+                 :accompanier (i / I))
+         :ARG1 (p / prepare-02
+                 :ARG0 i
+                 :ARG2 (k / do-01
+                         :ARG0 e
+                         :ARG1 (r / repair)
+                              :mod (d / difficult))
+                         :mod (a / alone)
+                         :manner (c / completely)))))
+
+(c / cause-01
+     :ARG1 (s / sleep-01
+               :ARG0 (I / I)
+               :location (s / sand)
+               :time (d2 / date-entity
+                      :dayperiod (e / evening)
+                      :ord (o / ordinal-entity :value 1))
+               :location (r / relative-position
+                     :op1 (a / area
+                           :ARG1-of (i / inhabit-01)
+                           :mod (e / every)))
+                     :quant (d / distance-quantity :quant 1000
+                            :unit (m / mile))
+                     :direction (f / far)))
+
+(a / isolate-01
+      :ARG1 (I / I)
+      :degree (m / more)
+      :compared-to (p / person
+            :ARG1-of (s / shipwreck-01)
+            :location (r / raft
+                  :location (o / ocean
+                        :mod (v / vast)
+                        :part (m / middle)))))
+
+(c / cause-01
+      :ARG1 (d / difficult
+            :domain (i / imagine-01
+                  :ARG0 (y / you)
+                  :ARG1 (s / surprise
+                          :poss (i / I)))
+                   :time (d / dawn
+                          :time-of (w / wake-01
+                                    :ARG0 (v / voice
+                                          :mod (s / strange)
+                                          :mod (l / small)))
+                                    :ARG1 i))
+                           :ARG0-of (t / say-01 
+                                      :ARG0 v)))
+
+(d / draw-01 :mode imperative :polite +
+            :ARG0 (y / you)
+            :ARG1 (l / lamb
+                   :mod ( l / little))
+            :ARG2 (i / I))
+
+(s / string-entity :value "Ε")
+
+(d / draw-01 :mode imperative
+  :ARG0 (y / you)
+  :ARG1 (l / lamb
+         :mod (l / little))
+  :ARG2 (i / I))
+
+(f / flinch-01
+      :ARG0 (i / I)
+      :manner (u / upright)
+      :ARG1-of (r / resemble-01
+            :ARG2 (s / strike-01
+                  :ARG1 i
+                  :ARG2 (l / lightning))))
+
+(a / and
+      :op1 (r / rub-01
+            :ARG0 (i / I))       
+      :op2 (r2 / rub-01
+            :ARG0 I
+            :ARG1 (e / eye
+                :part-of i)     
+            :mod (a / again)))
+
+(a / and
+      :op1 (l / look-01
+            :ARG0 (i / I))       
+      :op2 (l2 / look-01
+            :ARG0 i
+            :mod (a / again)
+            :manner (p / persistently)))
+
+(a / and
+      :op2 (s / see-01
+            :ARG0 (i / I)
+            :ARG1 (p / person
+                  :mod (m / microscopic)
+                  :mod (s / strange
+                        :degree (v / very)))
+                  :ARG0-of (o / observe-01
+                        :ARG1 i
+                        :manner (c / carefully))))

@@ -1,0 +1,460 @@
+
+(c / chapter
+     :mod 1) 
+
+(v / see-01
+	:ARG0 (j / I)
+	:ARG1 (d / drawing
+	      :mod (m / magnificent)
+	      :location (l / book :wiki - 
+		    :name (n / nom :op1 "Stories" :op2 "Lived")
+		    :topic (s / jungle
+			  :mod (v2 / virgin))))
+	:mod (q / when)
+	:time (a / age-01
+	      :ARG1 j
+	      :ARG2 (t / temporal-quantity :quant 6
+		    :unit (a / year))))
+
+(r / represent-01
+	:ARG0 (d / drawing)
+	:ARG1 (b / boa
+           :ARG0-of (e / swallow-01
+                      	:ARG1 (f / beast))))
+
+(b / be-located-at-91
+      :ARG1 (t / thing
+            :ARG2-of (c / copy-01
+                  :ARG1 (d / drawing)))
+      :ARG2 (a / here))
+
+(d / say-01
+      :ARG0 (l / book)
+      :ARG1 (e / swallow-01
+            :ARG0 (b / boa)
+            :ARG1 (p / prey
+                  :mod (s / whole)
+                  :poss b)
+            :manner (m / chew-01 :polarity -
+                  :ARG0 b
+                  :ARG1 p)))
+
+(i / and
+      :op1 (p / possible-01 :polarity -
+            :ARG1 (m / move-01
+                  :ARG0 (b / boa)
+                  :time (d / later)))
+      :op2 (d2 / sleep-01
+            :ARG0 b
+            :duration (t / temporal-quantity :quant 6
+                  :unit (m2 / month)
+                  :duration-of (d3 / digest-01
+                     		:ARG0 b))))
+
+(r / reflect-02
+      :ARG0 (j / I)
+      :ARG1 (a / adventure
+            :location (s / jungle))
+      :manner (m / much)
+      :time (a2 / then))
+
+(i / and
+      :op2 (f / make-01
+            :ARG0 (j / I)
+            :ARG1 (d / drawing
+                  :ord (o / ordinal-entity :value 1))
+            :instrument (l / pencil
+                  :mod (c / colored))
+            :manner (b / side
+                  :poss j)))
+
+(d / drawing 
+      :mod 1
+      :poss (j / I))
+
+(d / drawing
+      :mod (a / so))
+
+(i / and
+	:op1 (e / show-01
+	     :ARG0 (j / I)
+	     :ARG1 (o / work
+		   :mod (m / masterful))
+	     :ARG2 (p / person
+		   :mod (g / adult)))
+	:op2 (p2 / ask-01
+	     :ARG0 j
+	     :ARG1-of (f / frighten-01 :mode interrogative
+		      :ARG0 (d / drawing)
+		      :ARG1 p)		            
+	     :ARG2 p))
+
+(r / answer-01
+     :ARG0 (p / person
+	   :mod (g / adult)))
+
+(f / frighten-01
+     :ARG0 (b / hat)
+     :ARG1-of (c / cause-01
+              :ARG0 (a2 / amr-unknown)))
+
+(r / represent-01 :polarity -
+	:ARG0 (d / drawing
+	      :poss (j / I))
+	:ARG1 (b / hat))
+
+(r / represent-01
+	:ARG0 (b / boa
+	      :ARG1-of (d / digest-01
+		       :ARG2 (e / elephant))))
+
+(d / draw-01
+	:ARG0 (j / I)
+	:ARG1 (i / inside
+	      :part-of (b / boa))
+	:purpose (p / possible-01
+		  :ARG1 (e / understand-01
+                        :ARG0 (p / person
+			      :mod (g / adult))
+		        :ARG1 (h / it))))
+
+(n / need-01
+	:ARG0 (p / person
+	       :mod (g / adult))
+	:ARG1 (e / explanation)
+	:time (s / always))
+
+(d / drawing
+	:mod 2
+	:mod (a / so)
+	:poss (j / I))
+
+(i / and
+   :op1 (a / recommend-01
+	:ARG0 (p / person
+	      :mod (g / adult))
+	:ARG1 (j / I)
+	:ARG2 (d / stop-01
+	      :ARG0 j
+	      :ARG1 (d2 / drawing
+		    :topic (b / boa
+		           :mod (i2 / and
+			        :op1 (o / open)
+		    	        :op2 (t / closed)))))
+   :op2 (r / advise-01
+	:ARG0 p
+	:ARG1 (i3 / interest-01
+	      :ARG1 j
+	      :ARG2 (i4 / and
+		    :op1 (g / geography)
+		    :op2 (h / history)
+		    :op3 (c / calculus)
+		    :op4 (g2 / grammar))))))
+
+(c / cause-01
+     :ARG0 (a / so)
+     :ARG1 (a2 / give_up-07
+	   :ARG0 (j / I)
+	   :ARG1 (c / career
+		 :mod (p / painter)
+		 :mod (m / magnificent)))
+     :time (e / age
+	   :mod (t / temporal-quantity :quant 6
+		:unit (a3 / year))))
+
+(d / dishearten-01 
+	:ARG0 (f / fail-01
+		 :ARG1 (i / and
+		       :op1 (d2 / drawing
+			    :mod (n / number
+				 :mod 1)))
+		       :op2 (d3 / drawing
+			    :mod (n2 / number
+				 :mod 2)))))
+	:ARG1 (j / I))
+
+(i / and
+      :op1 (e / understand-01 :polarity -
+            :ARG0 (p2 / person
+		  :mod (g / adult))
+            :ARG1 (r / nothing)
+            :time (m / never)
+            :mod (t / themself))
+      :op2 (p / annoying
+            :domain (d / give-01
+                  :ARG0 (n / child)
+                  :ARG1 (i2 / and
+			:op1 (e2 / explanation)
+			:op2 (e2
+			     :quant (m2 / more)))
+                  :ARG2 p2
+                  :time (s / always))))
+
+(c / cause-01
+   :ARG1 (i / and
+          :op1 (o / obligate-01
+		  :ARG2 (e / choose-01
+                 	:ARG0 (j / I)
+                 	:ARG1 (o2 / profession
+                              :mod (a2 / another))))
+          :op2 (a / learn-01
+                 :ARG0 j
+                 :ARG1 (p / pilot-01
+                         :ARG0 j
+                         :ARG1 (a3 / airplane)))))
+
+(v / fly-01
+	:ARG0 (j / I)
+	:location (m / world
+	      :mod (t / all))
+	:degree (m2 / bit))
+
+(s / useful-05
+     :ARG1-of (t / true-01)
+     :ARG0 (j / I)
+     :ARG1 (g / geography)
+     :degree (m / much))
+
+(s / know-01
+	:ARG0 (j / I)
+	:ARG1 (d / distinguish-01
+		:ARG0 j
+		:ARG1 (c / country :wiki "China"
+                  :name (n / name :op1 "China"))
+            	:ARG2 (s2 / state :wiki "Arizona"
+                  :name (n2 / name :op1 "Arizona"))
+		:manner (a2/ at-first-glance)))
+
+(u / useful
+	:domain (a / this)
+	:condition (p / lose-01
+		   :ARG0 (t / you)
+		   :ARG1 t
+		   :duration (t2 / temporal-quantity
+			     :unit (n / night))))
+
+(c / contact-01
+	:ARG0 (j / I)
+	:ARG1 (g / people
+		:mod (s / serious)
+		:quant (p / pile))
+	:quant (p2 / pile)
+	:time (l / length
+		:poss (v / life))
+	:manner (m / way
+		:mod (a / this)))
+
+(v / live-01
+	:ARG0 (j / I)
+	:degree (m / very)
+	:location (e / among
+		  :op1 (p / person
+		       :mod (g / adult))))
+
+(v / see-01
+	:ARG0 (j / I)
+	:ARG1 (p2 / person
+	      :mod (g / adult)))
+	:manner (p / close
+		:degree (m / very))
+
+(m / improve-01 :polarity -
+	:ARG0 (a / this)
+	:ARG1 (o / opinion
+	      :poss (j / I))
+	:degree (g / hardly))
+
+(f / do-02
+     :ARG0 (j / I)
+     :ARG1 (e / experiment	
+	   :mod (d / drawing
+		:mod 1
+		:ARG1-of (c / keep-01
+			:ARG0 j
+			:time (s / always))))
+     :ARG2 p
+     :time (t / find-01
+	   :ARG0 j
+	   :ARG1 (p / person
+		 :ARG1-of (s / seem-02
+			  :ARG2 j
+	   		  :mod (l / lucid
+			       :degree (m / slightly))))))
+
+(s / know-01
+	:ARG0 (j / I)
+	:ARG1-of (v / want-01
+		 :ARG0 j)
+	:ARG1 (c / understand-01 :mode interrogative
+	      :ARG0 (p / person)))
+
+(c / contrast-01
+     :ARG2 (r / answer-01
+	   :ARG0 (p / person)
+	   :ARG1 (b / hat
+	         :domain (a / this))
+	   :time (s / always)))
+
+(p / talk-01
+	:ARG0 (j / I)
+	:ARG1 (o / or
+	      :op1 (b / boa)
+	      :op1 (s / jungle
+		   :mod (v / virgin))
+	      :op3 (e2 / star))
+	:ARG2 (p2 / person)
+	:time (a / then)
+	:polarity -)
+
+(p / put-01
+	:ARG0 (j / I)
+	:ARG1 j
+	:ARG2 (n / level
+	      :poss (p2 / person)))
+
+(p / talk-01
+	:ARG0 (j / I)
+	:ARG1 (a / and
+	      :op1 (b / bridge)
+	      :op2 (g / golf)
+	      :op3 (p3 / politics)
+	      :op4 (c / tie))
+	:ARG2 (p2 / person))
+
+(i / and
+   :op2 (c / happy-01
+	   :ARG0 (c2 / meet-02
+		    :ARG0 p
+		    :ARG1 (h / man
+			  :mod (a / wise
+			       :degree (t / so))))
+	    :ARG1 (p / person
+		  :mod (g / adult))
+	    :degree (b / really)))
+
+(c / chapter
+     :mod 2)
+
+(c / cause-01
+      :ARG1 (v / live-01
+            :ARG0 (j / I
+                  :ARG0-of (p / talk-01 :polarity - 
+                           :ARG2 (n / nobody)
+                           :manner (v2 / really)))
+            :manner (s / alone)
+            :duration (f / until
+                      :op1 (t / have-06
+                           :ARG0 j
+                           :ARG1 (a / breakdown)
+                           :location (d / desert :wiki "Sahara") 
+                           :time (a2 / before
+                                 :op1 (a3 / now)
+                                 :quant (t2 / temporal-quantity :quant 6
+                                        :unit (a4 / year)))))))
+
+(t / break-01
+	:ARG1 (c / something
+	      :part-of (m / engine)))
+
+(i / and
+    :op2 (c / cause-01
+         :ARG0 (a / go-01
+                 :ARG1 (j / I)
+                 :accompanier (o / or
+                         :op1 (m / mechanic)
+                         :op2 (p / passenger))
+                 :polarity -)
+         :ARG1 (p2 / prepare-02
+                 :ARG0 j
+		 :ARG1 j
+                 :ARG2 (m2 / attempt-01
+			:ARG0 j
+			:ARG1 (r / repair-01
+				:mod (d / difficult)))
+                	:mod (s / alone
+                        	:degree (t / completely)))))) 
+
+(a / sleep-01
+	:ARG0 (j / I)
+	:location (s / sand)
+	:time (d / date-entity
+	      :dayperiod (n / night)
+	      :ord (o / ordinal-entity :value 1))
+	:location (r / relative-position
+		:op1 (p / place
+		     :ARG1-of (h / inhabit-01)
+		     :mod (c / any))
+		:quant (d2 / distance-quantity :quant 1000
+			:unit (m / mile))))
+
+(a / isolate-01
+     :ARG1 (j / I)
+     :degree (m / more
+	     :degree (m2 / much))
+     :compared-to (p / person
+		  :ARG1-of (n / shipwreck-01)
+		  :location (r / boat
+			    :location (o / ocean
+				:part (m3 / middle)))))
+
+(c / cause-01
+     :ARG1 (i / imagine-01
+           :ARG0 (v / you)
+           :ARG1 (s / amaze-01
+                 :ARG1 (j / I)
+                 :time (t / break
+		       :mod (a / dawn))
+                       :time-of (d / wake-01
+                                :ARG0 (v2 / voice
+				      :mod (p / small)
+                                      :mod (e / special
+                                      	   :degree (m / very)))
+                                :ARG1 j)))
+	   :mode imperative)))
+
+(d / say-01
+	:ARG0 (v / voice)
+	:ARG1 (d2 / draw-01 :mode imperative :polite +
+	      :ARG0 (t / you)
+	      :ARG1 (b / lamb)
+	      :ARG2 (j / I)))
+
+(s / string-entity :value "eh")
+
+(d / draw-01
+	:ARG0 (t / you)
+	:ARG1 (b / lamb)
+	:ARG2 (j / I)
+	:mode imperative)
+
+(p / put-01
+	:ARG0 (j / I)
+	:ARG1 j
+	:ARG2 (d / stand)
+	:manner (s / jump-01
+		:ARG0 j)
+	:conj-as-if (c / fall-01
+		    :ARG1 (l / lightning)
+		    :ARG4 j))
+
+(f / rub-01
+	:ARG0 (j / I)
+	:ARG1 (u / eye
+	      :part-of j)
+	:degree (b / well))
+
+(m / look-01
+	:ARG0 (j / I)
+	:manner (b / well))
+
+(i / and
+     :op2 (v / see-01
+	  :ARG0 (j / I)
+	  :ARG1 (j2 / youngster
+		:mod (p / small)
+	        :mod (e / extraordinary
+		     :degree (r / really))
+	        :ARG0-of (o / observe-01
+		         :ARG1 j
+		         :manner (a / way
+			         :mod (g / worried))))))
