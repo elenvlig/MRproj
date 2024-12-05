@@ -1,7 +1,10 @@
-
+# ::id isi_1.1
+# ::snt Capítol 1.
 (c / chapter
      :mod 1) 
 
+# ::id isi_1.2
+# ::snt Quan tenia sis anys , una vegada vaig veure un dibuix magnífic en un llibre sobre la selva verge que es deia Històries viscudes.
 (v / see-01
 	:ARG0 (j / I)
 	:ARG1 (d / drawing

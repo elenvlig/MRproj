@@ -1,0 +1,21 @@
+# ::id isi_1.1
+# ::snt ΚΕΦΑΛΑΙΟ ΠΡΩΤΟ.
+(c / chapter
+      :ord (o / ordinal-entity 
+            :value 1))
+
+# ::id isi_1.2
+# ::snt Όταν ακόμη ήμουν έξη χρονών, είδα μια υπέροχη ζωγραφιά σ'ένα βιβλίο για το Άγριο Δάσος, που είχε τον τίτλο «Αληθινές Ιστορίες».
+(s / see-01
+      :ARG0 (i / I)
+      :ARG1 (d / drawing
+            :mod (w / wonderful)
+            :location (b / book :wiki -
+                  :name (n / name :op1 "True" :op2 "Stories")
+                  :topic (f / forest
+                        :mod (w2 / wild))))
+      :mod (s2 / still)
+      :time (a / age-01
+            :ARG0 i
+            :ARG1 (t / temporal-quantity :quant 6
+                  :unit (y / year))))

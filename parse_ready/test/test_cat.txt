@@ -1,0 +1,20 @@
+# ::id isi_1.1
+# ::snt Capítol 1.
+(c / chapter
+      :mod 1) 
+
+# ::id isi_1.2
+# ::snt Quan tenia sis anys , una vegada vaig veure un dibuix magnífic en un llibre sobre la selva verge que es deia Històries viscudes.
+(v / see-01
+      :ARG0 (j / I)
+      :ARG1 (d / drawing
+            :mod (m / magnificent)
+            :location (l / book :wiki - 
+                  :name (n / nom :op1 "Stories" :op2 "Lived")
+                  :topic (s / jungle
+                        :mod (v2 / virgin))))
+      :mod (q / when)
+      :time (a / age-01
+            :ARG1 j
+            :ARG2 (t / temporal-quantity :quant 6
+                  :unit (a / year))))
