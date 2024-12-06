@@ -22,7 +22,7 @@
   :ARG1 (s2 / snake
         :mod (h / huge)
         :mod (b / boa)
-        :ARG0-of (s3 / devour-01
+        :ARG0-of (d / devour-01
                     :ARG1 (w / wild-animal)))))
 
 (s / show-01
