@@ -171,7 +171,7 @@
                       :ARG0 i
                       :ARG1 (p2 / picture
                             :ARG1-of (d2 / draw-01
-                                     :ARG0 i)
+                                     :ARG0 i
                             :topic (b2 / boa
                                    :mod (c2 / constrictor)
                                    :mod (o / or

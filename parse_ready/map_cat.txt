@@ -10,14 +10,14 @@
 	:ARG1 (d / drawing
 	      :mod (m / magnificent)
 	      :location (l / book :wiki - 
-		    :name (n / nom :op1 "Stories" :op2 "Lived")
+		    :name (n / name :op1 "Stories" :op2 "Lived")
 		    :topic (s / jungle
 			  :mod (v2 / virgin))))
 	:mod (q / when)
 	:time (a / age-01
 	      :ARG1 j
 	      :ARG2 (t / temporal-quantity :quant 6
-		    :unit (a / year))))
+		    :unit (a2 / year))))
 
 (r / represent-01
 	:ARG0 (d / drawing)
@@ -117,7 +117,7 @@
 	      :part-of (b / boa))
 	:purpose (p / possible-01
 		  :ARG1 (e / understand-01
-                        :ARG0 (p / person
+                        :ARG0 (p2 / person
 			      :mod (g / adult))
 		        :ARG1 (h / it))))
 
@@ -149,31 +149,31 @@
 	:ARG1 (i3 / interest-01
 	      :ARG1 j
 	      :ARG2 (i4 / and
-		    :op1 (g / geography)
+		    :op1 (g2 / geography)
 		    :op2 (h / history)
 		    :op3 (c / calculus)
-		    :op4 (g2 / grammar))))))
+		    :op4 (g3 / grammar))))))
 
 (c / cause-01
      :ARG0 (a / so)
      :ARG1 (a2 / give_up-07
 	   :ARG0 (j / I)
-	   :ARG1 (c / career
+	   :ARG1 (c2 / career
 		 :mod (p / painter)
 		 :mod (m / magnificent)))
      :time (e / age
 	   :mod (t / temporal-quantity :quant 6
 		:unit (a3 / year))))
 
-(d / dishearten-01 
+(d / dishearten-01
 	:ARG0 (f / fail-01
 		 :ARG1 (i / and
 		       :op1 (d2 / drawing
 			    :mod (n / number
-				 :mod 1)))
+				 :mod 1))
 		       :op2 (d3 / drawing
 			    :mod (n2 / number
-				 :mod 2)))))
+				 :mod 2))))
 	:ARG1 (j / I))
 
 (i / and
@@ -188,8 +188,8 @@
                   :ARG0 (n / child)
                   :ARG1 (i2 / and
 			:op1 (e2 / explanation)
-			:op2 (e2
-			     :quant (m2 / more)))
+			:op2 e2
+			     :quant (m2 / more))
                   :ARG2 p2
                   :time (s / always))))
 
@@ -257,9 +257,9 @@
 (v / see-01
 	:ARG0 (j / I)
 	:ARG1 (p2 / person
-	      :mod (g / adult)))
+	      :mod (g / adult))
 	:manner (p / close
-		:degree (m / very))
+		:degree (m / very)))
 
 (m / improve-01 :polarity -
 	:ARG0 (a / this)
@@ -279,7 +279,7 @@
      :time (t / find-01
 	   :ARG0 j
 	   :ARG1 (p / person
-		 :ARG1-of (s / seem-02
+		 :ARG1-of (s2 / seem-02
 			  :ARG2 j
 	   		  :mod (l / lucid
 			       :degree (m / slightly))))))
@@ -373,7 +373,7 @@
                  :ARG2 (m2 / attempt-01
 			:ARG0 j
 			:ARG1 (r / repair-01
-				:mod (d / difficult)))
+				:mod (d / difficult))
                 	:mod (s / alone
                         	:degree (t / completely)))))) 
 
@@ -406,14 +406,14 @@
            :ARG1 (s / amaze-01
                  :ARG1 (j / I)
                  :time (t / break
-		       :mod (a / dawn))
+		       :mod (a / dawn)
                        :time-of (d / wake-01
                                 :ARG0 (v2 / voice
 				      :mod (p / small)
                                       :mod (e / special
                                       	   :degree (m / very)))
                                 :ARG1 j)))
-	   :mode imperative)))
+	   :mode imperative))
 
 (d / say-01
 	:ARG0 (v / voice)

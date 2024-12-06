@@ -10,7 +10,7 @@
       :ARG1 (d / drawing
             :mod (m / magnificent)
             :location (l / book :wiki - 
-                  :name (n / nom :op1 "Stories" :op2 "Lived")
+                  :name (n / name :op1 "Stories" :op2 "Lived")
                   :topic (s / jungle
                         :mod (v2 / virgin))))
       :mod (q / when)
